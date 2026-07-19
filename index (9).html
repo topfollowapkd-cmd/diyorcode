@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Future IT Expert — Ingliz tilini noldan bepul o'rganing</title>
+<meta name="description" content="Ingliz tilini mutlaqo noldan, 50 kunlik bepul kurs orqali o'rganing. Kursni tugatgach IELTS bosqichiga o'ting.">
+<meta name="robots" content="index, follow">
+<meta name="google-site-verification" content="sLyy2sclZ_uGIWMas7ILadozhcpx_Hk7jRsL1I6uvSc" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,900&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EFF3EC; --surface:#FFFFFF; --ink:#1B2321; --muted:#5E6B62;
+  --accent:#F2B705; --accent-deep:#8A5A00; --good:#2F8F5B; --bad:#E1523D;
+  --line:#D7DED4; --radius:16px; --shadow:0 12px 32px -14px rgba(27,35,33,0.22);
+}
+[data-theme="dark"]{
+  --paper:#14181A; --surface:#1D2321; --ink:#EEF3EC; --muted:#9BAAA1;
+  --accent:#F2C238; --accent-deep:#F2C238; --good:#4CBE85; --bad:#F0776A;
+  --line:#2C3531; --shadow:0 12px 32px -14px rgba(0,0,0,0.55);
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0; background:var(--paper); color:var(--ink); font-family:'Public Sans',sans-serif;
+  -webkit-font-smoothing:antialiased; overflow-x:hidden; transition:background .25s ease,color .25s ease;}
+h1,h2,h3{font-family:'Fraunces',serif; margin:0; letter-spacing:-0.01em;}
+.mono{font-family:'IBM Plex Mono',monospace;}
+a{color:inherit;} button{font-family:inherit; cursor:pointer;}
+:focus-visible{outline:3px solid var(--accent); outline-offset:2px;}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms !important; transition-duration:.01ms !important;}}
+.bg-grid{position:fixed; inset:0; z-index:0; pointer-events:none;
+  background-image:linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size:64px 64px; opacity:.35;}
+.wrap{max-width:900px; margin:0 auto; padding:0 24px; position:relative; z-index:1;}
+nav{position:sticky; top:0; z-index:30; backdrop-filter:blur(10px);
+  background:color-mix(in srgb, var(--paper) 86%, transparent); border-bottom:1px solid var(--line);}
+.nav-inner{max-width:900px; margin:0 auto; padding:14px 24px; display:flex; align-items:center; justify-content:space-between;}
+.brand{font-family:'Fraunces',serif; font-weight:700; font-size:18px;}
+.brand .mark{display:inline-flex; align-items:center; justify-content:center; width:22px; height:22px; background:var(--accent);
+  color:var(--ink); border-radius:5px; font-size:12px; font-weight:800; margin-right:8px; font-family:'IBM Plex Mono',monospace;}
+.nav-right{display:flex; align-items:center; gap:14px;}
+.nav-tag{font-size:11px; color:var(--muted); letter-spacing:.06em;}
+.theme-toggle{background:var(--surface); border:1.5px solid var(--line); border-radius:10px; width:36px; height:36px;
+  display:flex; align-items:center; justify-content:center; font-size:15px;}
+.theme-toggle:hover{border-color:var(--accent);}
+.logout-btn{background:none; border:none; font-size:11px; color:var(--muted); text-decoration:underline;}
+
+.hero{min-height:80vh; display:flex; flex-direction:column; justify-content:center; padding:56px 0 40px;}
+.hero h1{font-size:clamp(32px,6vw,54px); line-height:1.08; font-weight:700; max-width:760px;}
+.hero .sub{margin-top:18px; font-size:16.5px; color:var(--muted); max-width:560px; line-height:1.65;}
+.hero .cta-line{margin-top:28px; font-size:14.5px; color:var(--ink); font-weight:500;}
+.counter-pill{display:inline-flex; align-items:center; gap:8px; font-family:'IBM Plex Mono',monospace; font-size:12.5px;
+  color:var(--accent-deep); background:color-mix(in srgb, var(--accent) 20%, var(--surface)); border:1px solid var(--accent);
+  padding:7px 13px; border-radius:100px; margin-bottom:22px;}
+.cta-row{margin-top:16px; display:flex; align-items:center; gap:18px; flex-wrap:wrap;}
+.btn-primary{background:var(--ink); color:var(--paper); border:none; border-radius:10px; padding:17px 30px; font-size:15px;
+  font-weight:600; box-shadow:var(--shadow); transition:transform .15s ease, background .15s ease;}
+.btn-primary:hover{background:var(--accent-deep); transform:translateY(-2px);}
+.social-row{display:flex; gap:12px; margin-top:22px;}
+.social-pill{display:flex; align-items:center; gap:9px; background:var(--surface); border:1px solid var(--line); border-radius:10px;
+  padding:10px 16px; font-size:13px; font-weight:500; text-decoration:none; transition:border-color .15s ease, transform .15s ease;}
+.social-pill:hover{border-color:var(--accent); transform:translateY(-2px);}
+.social-pill svg{width:16px; height:16px; flex-shrink:0;}
+
+.install-card{max-width:520px; margin:34px auto 0; background:var(--surface); border:1px solid var(--line);
+  border-radius:var(--radius); box-shadow:var(--shadow); padding:32px; display:none;}
+.install-card.active{display:block;}
+.install-head{display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px;}
+.install-title{font-size:11px; letter-spacing:.09em; color:var(--muted); text-transform:uppercase; font-family:'IBM Plex Mono',monospace;}
+.install-step{font-size:12px; color:var(--accent-deep); font-weight:700; font-family:'IBM Plex Mono',monospace;}
+.progress-track{height:7px; background:var(--paper); border-radius:100px; overflow:hidden; margin:13px 0 24px; border:1px solid var(--line);}
+.progress-fill{height:100%; background:var(--accent); width:0%; transition:width .5s cubic-bezier(.4,0,.2,1);}
+.step-panel{display:none;}
+.step-panel.active{display:block; animation:fadeUp .35s ease;}
+@keyframes fadeUp{from{opacity:0; transform:translateY(8px);} to{opacity:1; transform:translateY(0);}}
+.field-label{font-size:13px; font-weight:600; margin-bottom:7px; display:block;}
+.field-hint{font-size:11.5px; color:var(--muted); margin-top:6px;}
+.field-hint.err{color:var(--bad);}
+input[type=text],input[type=tel],input[type=password],textarea{
+  width:100%; border:1.5px solid var(--line); border-radius:10px; padding:12px 14px; font-size:14px;
+  font-family:'Public Sans',sans-serif; background:var(--paper); color:var(--ink); transition:border-color .15s ease;}
+input:focus,textarea:focus{border-color:var(--accent);}
+.phone-row{display:flex; align-items:center; gap:8px;}
+.phone-prefix{font-family:'IBM Plex Mono',monospace; font-weight:700; background:var(--paper); border:1.5px solid var(--line);
+  border-radius:10px; padding:12px 12px; flex-shrink:0;}
+.step-actions{display:flex; justify-content:space-between; align-items:center; margin-top:22px;}
+.btn-ghost{background:none; border:none; color:var(--muted); font-size:13px; font-weight:500;}
+.btn-ghost:hover{color:var(--ink);}
+.btn-next{background:var(--ink); color:var(--paper); border:none; border-radius:10px; padding:12px 22px; font-size:13.5px; font-weight:600;}
+.btn-next:hover{background:var(--accent-deep);}
+.btn-next:disabled{opacity:.4; cursor:not-allowed;}
+.installing{text-align:center; padding:8px 0;}
+.installing .mono{font-size:12.5px; color:var(--accent-deep); margin-bottom:14px;}
+.field-row-2{display:flex; gap:10px;}
+.field-row-2 > div{flex:1;}
+
+#dashboard{display:none; padding:56px 0 100px;}
+#dashboard.active{display:block;}
+.welcome-badge{font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.08em; color:var(--good);
+  text-transform:uppercase; display:flex; align-items:center; gap:8px; margin-bottom:16px;}
+.welcome-badge::before{content:''; width:7px; height:7px; border-radius:50%; background:var(--good);}
+#dashboard h2{font-size:clamp(26px,4vw,36px); font-weight:700; max-width:640px;}
+.dash-sub{color:var(--muted); margin-top:10px; font-size:14.5px; max-width:520px;}
+.streak-line{margin-top:16px; font-size:13.5px; font-family:'IBM Plex Mono',monospace; color:var(--accent-deep);}
+.module-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:34px;}
+@media(max-width:640px){.module-grid{grid-template-columns:1fr 1fr;}}
+.module-tile{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:22px 18px; text-align:left;
+  transition:transform .15s ease, border-color .15s ease; display:flex; flex-direction:column; gap:12px; min-height:120px; position:relative;}
+.module-tile:hover:not(:disabled){transform:translateY(-3px); border-color:var(--accent); box-shadow:var(--shadow);}
+.module-tile:disabled{opacity:.5; cursor:not-allowed;}
+.module-tile .tag{font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:var(--muted); letter-spacing:.05em;}
+.module-tile .name{font-family:'Fraunces',serif; font-weight:600; font-size:15.5px; line-height:1.3;}
+.module-icon{width:30px; height:30px; display:flex; align-items:center; justify-content:center; background:var(--paper); border-radius:8px; font-size:15px;}
+.lock-badge{position:absolute; top:14px; right:14px; font-size:14px;}
+
+#moduleView{display:none; padding:44px 0 100px;}
+#moduleView.active{display:block;}
+.back-link{display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:600; color:var(--muted); background:none; border:none; margin-bottom:28px;}
+.back-link:hover{color:var(--ink);}
+.module-header{margin-bottom:30px;}
+.module-header .tag{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--accent-deep); letter-spacing:.08em; text-transform:uppercase;}
+.module-header h2{font-size:clamp(24px,4vw,32px); margin-top:8px; font-weight:700;}
+.module-header p{color:var(--muted); margin-top:9px; max-width:540px; font-size:14px;}
+
+.item-card{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:15px 18px;
+  display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:9px;}
+.item-title{font-weight:600; font-size:13.5px;}
+.item-meta{font-size:11.5px; color:var(--muted); margin-top:3px;}
+.chip{font-size:10.5px; background:var(--paper); border:1px solid var(--line); border-radius:6px; padding:4px 9px; color:var(--muted); flex-shrink:0; font-family:'IBM Plex Mono',monospace;}
+.reveal-btn{margin-top:13px; background:none; border:1.5px solid var(--line); border-radius:8px; padding:9px 15px; font-size:12px; font-weight:600;}
+.reveal-btn:hover{border-color:var(--accent);}
+.reveal-body{display:none; margin-top:13px; padding-top:13px; border-top:1px dashed var(--line);}
+.reveal-body.open{display:block;}
+.soon-card{background:var(--surface); border:1.5px dashed var(--line); border-radius:14px; padding:19px; text-align:center; color:var(--muted); font-size:12.5px;}
+
+.day-grid{display:grid; grid-template-columns:repeat(10,1fr); gap:6px; margin-bottom:20px;}
+@media(max-width:600px){.day-grid{grid-template-columns:repeat(6,1fr);}}
+.day-cell{aspect-ratio:1; border-radius:7px; border:1.5px solid var(--line); background:var(--surface); display:flex; align-items:center; justify-content:center;
+  font-family:'IBM Plex Mono',monospace; font-size:11px; font-weight:700; color:var(--muted);}
+.day-cell.unlocked{color:var(--ink); border-color:var(--accent); cursor:pointer;}
+.day-cell.passed{background:var(--good); color:#fff; border-color:var(--good); cursor:pointer;}
+.day-cell.active-day{outline:2px solid var(--accent); outline-offset:2px;}
+.day-cell.locked{opacity:.4; cursor:not-allowed;}
+.lesson-box{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:20px; margin-bottom:16px; line-height:1.72; font-size:13.5px;}
+.lesson-box h4{font-family:'Fraunces',serif; font-size:15px; margin:15px 0 8px;}
+.lesson-box h4:first-child{margin-top:0;}
+.lesson-box p{margin:0 0 10px;}
+.lesson-box ul{margin:0 0 10px; padding-left:20px;}
+.lesson-box table{width:100%; border-collapse:collapse; margin:10px 0; font-size:12.5px;}
+.lesson-box th,.lesson-box td{border:1px solid var(--line); padding:6px 10px; text-align:left;}
+.lesson-box th{background:var(--paper);}
+.mcq-block{margin-bottom:15px;}
+.mcq-q{font-size:13px; font-weight:600; margin-bottom:7px;}
+.mcq-opt{display:flex; align-items:center; gap:8px; font-size:12.5px; padding:6px 4px; border-radius:8px;}
+.mcq-opt.m-correct{background:color-mix(in srgb, var(--good) 15%, var(--surface));}
+.mcq-opt.m-wrong{background:color-mix(in srgb, var(--bad) 12%, var(--surface));}
+.check-btn{background:var(--ink); color:var(--paper); border:none; border-radius:9px; padding:11px 20px; font-size:13px; font-weight:600; margin-top:6px;}
+.check-btn:hover{background:var(--accent-deep);}
+.score-badge{display:none; margin-left:12px; font-family:'IBM Plex Mono',monospace; font-size:12px;
+  background:color-mix(in srgb, var(--accent) 22%, var(--surface)); color:var(--accent-deep); padding:7px 13px; border-radius:100px;}
+.score-badge.show{display:inline-block;}
+.day-final-score{text-align:center; padding:20px; background:var(--surface); border:1.5px solid var(--accent); border-radius:14px; margin-top:14px;}
+.ask-btn{display:inline-flex; align-items:center; gap:7px; margin-top:14px; font-size:12.5px; font-weight:600; color:var(--accent-deep);
+  border:1px solid var(--line); border-radius:9px; padding:9px 15px; text-decoration:none;}
+.ask-btn:hover{border-color:var(--accent);}
+
+.pron-box{background:var(--paper); border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin:14px 0;}
+.pron-title{font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--accent-deep); text-transform:uppercase; letter-spacing:.05em; margin-bottom:10px;}
+.pron-word{display:flex; align-items:center; gap:10px; padding:7px 0;}
+.pron-play{width:30px; height:30px; border-radius:50%; background:var(--ink); color:var(--paper); border:none; font-size:12px; flex-shrink:0;}
+.pron-play:hover{background:var(--accent-deep);}
+.pron-text{font-family:'Fraunces',serif; font-weight:600; font-size:14.5px;}
+.pron-hint{font-size:11.5px; color:var(--muted);}
+
+.stat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-bottom:22px;}
+@media(max-width:560px){.stat-grid{grid-template-columns:1fr 1fr;}}
+.stat-box{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:19px; text-align:center;}
+.stat-num{font-family:'Fraunces',serif; font-weight:700; font-size:24px;}
+.stat-label{font-size:11px; color:var(--muted); margin-top:4px; text-transform:uppercase; letter-spacing:.04em;}
+
+.cert-preview{background:linear-gradient(135deg, var(--surface), var(--paper)); border:2px solid var(--accent); border-radius:16px; padding:32px; text-align:center; margin-bottom:20px;}
+.cert-badge{font-size:36px;}
+.cert-title{font-family:'Fraunces',serif; font-weight:700; font-size:19px; letter-spacing:.04em; margin-top:8px;}
+.cert-sub{font-size:12px; color:var(--muted); margin-top:6px;}
+.cert-name-line{font-family:'Fraunces',serif; font-style:italic; font-size:21px; margin-top:15px; border-bottom:1.5px solid var(--ink); display:inline-block; padding-bottom:4px;}
+
+.vocab-card{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:16px 18px; margin-bottom:10px; display:flex; justify-content:space-between; align-items:center;}
+.vocab-word{font-family:'Fraunces',serif; font-weight:600; font-size:15px;}
+.vocab-def{font-size:12px; color:var(--muted); margin-top:2px;}
+
+.part-tabs{display:flex; gap:8px; margin-bottom:18px; flex-wrap:wrap;}
+.part-tab{background:var(--paper); border:1.5px solid var(--line); border-radius:100px; padding:8px 15px; font-size:12px; font-weight:600; color:var(--muted);}
+.part-tab.active{background:var(--ink); color:var(--paper); border-color:var(--ink);}
+.part-body{display:none;}
+.part-body.active{display:block; animation:fadeUp .3s ease;}
+
+footer{border-top:1px solid var(--line); padding:24px 0; text-align:center; font-size:12px; color:var(--muted);}
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+
+<nav>
+  <div class="nav-inner">
+    <div class="brand"><span class="mark">FE</span>Future IT Expert</div>
+    <div class="nav-right">
+      <div class="nav-tag mono" id="navStatus">MEHMON</div>
+      <button class="logout-btn" id="logoutBtn" onclick="logoutUser()" style="display:none;">Chiqish</button>
+      <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" title="Rejimni almashtirish">🌙</button>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+
+  <section class="hero" id="heroSection">
+    <div class="counter-pill" id="counterPill">👥 <span id="counterNum">...</span> kishi ro'yxatdan o'tgan</div>
+    <h1>Assalomu alaykum, xush kelibsiz!</h1>
+    <p class="sub">Bu — ingliz tilini <strong>mutlaqo noldan</strong>, bepul o'rganishingiz uchun yaratilgan sayt. Harflarni bilmasangiz ham mayli — 50 kunlik ketma-ket kurs sizni qadam-baqadam olib boradi. Kursni tugatgach, IELTS bosqichiga o'tasiz.</p>
+    <p class="cta-line">Agar boshlashni xohlasangiz, "Boshlash" tugmasini bosing 👇</p>
+
+    <div class="cta-row">
+      <button class="btn-primary" id="startRegisterBtn">Boshlash</button>
+    </div>
+    <p class="field-hint" style="margin-top:10px;">Allaqachon ro'yxatdan o'tganmisiz? <a href="#" id="showLoginLink" style="color:var(--accent-deep); font-weight:600; text-decoration:underline;">Kirish</a></p>
+
+    <div class="social-row">
+      <a class="social-pill" href="https://instagram.com/4diiyor" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg>
+        @4diiyor
+      </a>
+      <a class="social-pill" href="https://t.me/diiyor4" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 4L3 11l6 2.5M21 4l-4 16-8-6.5M21 4L9 13.5"/></svg>
+        t.me/diiyor4
+      </a>
+    </div>
+
+    <div class="install-card" id="installCard">
+
+      <div class="step-panel active" data-step="1">
+        <div class="install-head"><span class="install-title">Ro'yxatdan o'tish</span><span class="install-step">01 / 03</span></div>
+        <div class="progress-track"><div class="progress-fill" style="width:33%"></div></div>
+        <label class="field-label" for="fName">Ism va familiyangiz</label>
+        <input type="text" id="fName" placeholder="Masalan: Diyor Aliyev" autocomplete="name">
+        <div class="field-hint">Bu ism sayt bo'ylab siz uchun ishlatiladi.</div>
+        <div class="step-actions">
+          <button class="btn-ghost" id="cancelStep1">Bekor qilish</button>
+          <button class="btn-next" id="nextStep1" disabled>Keyingisi →</button>
+        </div>
+      </div>
+
+      <div class="step-panel" data-step="2">
+        <div class="install-head"><span class="install-title">Login va parol</span><span class="install-step">02 / 03</span></div>
+        <div class="progress-track"><div class="progress-fill" style="width:66%"></div></div>
+        <div class="field-row-2">
+          <div>
+            <label class="field-label" for="fLogin">Login</label>
+            <input type="text" id="fLogin" placeholder="masalan: diyor2010" autocomplete="username">
+          </div>
+          <div>
+            <label class="field-label" for="fPass">Parol</label>
+            <input type="password" id="fPass" placeholder="Kamida 4 belgi" autocomplete="new-password">
+          </div>
+        </div>
+        <div class="field-hint" id="loginFieldHint">Login boshqa hech kimniki bilan bir xil bo'lmasligi kerak — biz buni avtomatik tekshiramiz.</div>
+        <div class="step-actions">
+          <button class="btn-ghost" id="backStep2">← Orqaga</button>
+          <button class="btn-next" id="nextStep2" disabled>Keyingisi →</button>
+        </div>
+      </div>
+
+      <div class="step-panel" data-step="3">
+        <div class="install-head"><span class="install-title">Telefon raqam</span><span class="install-step">03 / 03</span></div>
+        <div class="progress-track"><div class="progress-fill" style="width:95%"></div></div>
+        <label class="field-label" for="fPhone">Telefon raqamingiz</label>
+        <div class="phone-row">
+          <span class="phone-prefix">+998</span>
+          <input type="tel" id="fPhone" placeholder="90 123 45 67" autocomplete="tel">
+        </div>
+        <div class="field-hint">Faqat siz bilan bog'lanish uchun ishlatiladi.</div>
+        <div class="step-actions">
+          <button class="btn-ghost" id="backStep3">← Orqaga</button>
+          <button class="btn-next" id="finishBtn">Yakunlash ✓</button>
+        </div>
+      </div>
+
+      <div class="step-panel" data-step="installing">
+        <div class="installing">
+          <div class="progress-track"><div class="progress-fill" id="installFill" style="width:0%"></div></div>
+          <div class="mono" id="installText">PROFIL YARATILMOQDA...</div>
+        </div>
+      </div>
+
+      <div class="step-panel" data-step="login">
+        <div class="install-head"><span class="install-title">Kirish</span></div>
+        <label class="field-label" for="loginLoginInput">Login</label>
+        <input type="text" id="loginLoginInput" placeholder="Login" autocomplete="username" style="margin-bottom:12px;">
+        <label class="field-label" for="loginPassInput">Parol</label>
+        <input type="password" id="loginPassInput" placeholder="Parol" autocomplete="current-password">
+        <div class="field-hint" id="loginHint">Ro'yxatdan o'tganda yaratgan login va parolingizni kiriting.</div>
+        <div class="step-actions">
+          <button class="btn-ghost" id="switchToRegister">Ro'yxatdan o'tish</button>
+          <button class="btn-next" id="loginBtn">Kirish →</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="dashboard">
+    <div class="welcome-badge">Xush kelibsiz</div>
+    <h2 id="dashName">Salom!</h2>
+    <p class="dash-sub">Quyidagi bo'limlardan birini tanlang.</p>
+    <div class="streak-line" id="streakLine"></div>
+
+    <div class="module-grid">
+      <button class="module-tile" data-module="lessons"><div class="module-icon">📅</div><div class="tag mono">01</div><div class="name">Darslar (1–50 kun)</div></button>
+      <button class="module-tile" data-module="ielts" id="ieltsTile"><div class="module-icon">🎯</div><div class="tag mono">02</div><div class="name">IELTS bosqichi</div><span class="lock-badge" id="ieltsLock">🔒</span></button>
+      <button class="module-tile" data-module="progress"><div class="module-icon">📊</div><div class="tag mono">03</div><div class="name">Mening progressim</div></button>
+      <button class="module-tile" data-module="vocab"><div class="module-icon">📘</div><div class="tag mono">04</div><div class="name">Lug'atim</div></button>
+      <button class="module-tile" data-module="certificate"><div class="module-icon">🏅</div><div class="tag mono">05</div><div class="name">Sertifikat</div></button>
+    </div>
+  </section>
+
+  <section id="moduleView">
+    <button class="back-link" id="backToDash">← Bosh sahifaga qaytish</button>
+    <div id="moduleContent"></div>
+  </section>
+
+</div>
+
+<footer>
+  Future IT Expert · <a href="https://t.me/diiyor4" target="_blank" rel="noopener">Telegram</a> · <a href="https://instagram.com/4diiyor" target="_blank" rel="noopener">Instagram</a>
+</footer>
+
+<script>
+// ============ CONFIG ============
+// Google Apps Script Web App URL shu yerga qo'yiladi (deploy qilingach)
+const API_URL = "https://script.google.com/macros/s/AKfycbwCNOmBl87VO1tbYepwSMbjcexoxh4H-67d-nS47yfu6R0fn3nkv015DbYmHtKRhDSkwg/exec";
+const API_READY = API_URL.indexOf('http') === 0;
+
+// ============ THEME ============
+function applyTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+  const btn = document.getElementById('themeToggle');
+  if (btn) btn.textContent = t === 'dark' ? '☀️' : '🌙';
+  localStorage.setItem('fie3_theme', t);
+}
+function toggleTheme(){
+  applyTheme(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+}
+(function initTheme(){
+  const saved = localStorage.getItem('fie3_theme');
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  applyTheme(saved || (prefersDark ? 'dark' : 'light'));
+})();
+
+// ============ PUBLIC COUNTER ============
+async function loadCounter(){
+  const el = document.getElementById('counterNum');
+  if (!API_READY){ el.textContent = '—'; return; }
+  try {
+    const res = await fetch(`${API_URL}?action=count`);
+    const data = await res.json();
+    el.textContent = data.count ?? '—';
+  } catch(e){ el.textContent = '—'; }
+}
+loadCounter();
+
+// ============ STATE ============
+let userData = { fullName:'', login:'', password:'', phone:'', dream:'' };
+
+function showStep(n){
+  document.querySelectorAll('.step-panel').forEach(p => p.classList.remove('active'));
+  document.querySelector(`.step-panel[data-step="${n}"]`).classList.add('active');
+}
+
+document.getElementById('startRegisterBtn').addEventListener('click', () => {
+  document.getElementById('installCard').classList.add('active');
+  showStep(1);
+  document.getElementById('installCard').scrollIntoView({behavior:'smooth', block:'center'});
+});
+document.getElementById('showLoginLink').addEventListener('click', (e) => {
+  e.preventDefault();
+  document.getElementById('installCard').classList.add('active');
+  showStep('login');
+  document.getElementById('installCard').scrollIntoView({behavior:'smooth', block:'center'});
+});
+document.getElementById('switchToRegister').addEventListener('click', () => showStep(1));
+
+// ---- Step 1: name ----
+const fName = document.getElementById('fName');
+const nextStep1 = document.getElementById('nextStep1');
+fName.addEventListener('input', () => { nextStep1.disabled = fName.value.trim().length < 3; });
+nextStep1.addEventListener('click', () => { userData.fullName = fName.value.trim(); showStep(2); });
+document.getElementById('cancelStep1').addEventListener('click', () => document.getElementById('installCard').classList.remove('active'));
+
+// ---- Step 2: login + password (with uniqueness check) ----
+const fLogin = document.getElementById('fLogin');
+const fPass = document.getElementById('fPass');
+const nextStep2 = document.getElementById('nextStep2');
+const loginFieldHint = document.getElementById('loginFieldHint');
+let loginCheckTimer = null;
+let loginAvailable = false;
+
+function validateStep2(){
+  const loginOk = fLogin.value.trim().length >= 3 && loginAvailable;
+  const passOk = fPass.value.length >= 4;
+  nextStep2.disabled = !(loginOk && passOk);
+}
+fLogin.addEventListener('input', () => {
+  loginAvailable = false;
+  validateStep2();
+  clearTimeout(loginCheckTimer);
+  const val = fLogin.value.trim();
+  if (val.length < 3){ loginFieldHint.textContent = 'Login kamida 3 ta belgidan iborat bo\'lsin.'; loginFieldHint.classList.remove('err'); return; }
+  loginFieldHint.textContent = 'Tekshirilmoqda...';
+  loginCheckTimer = setTimeout(async () => {
+    if (!API_READY){
+      loginFieldHint.textContent = "Backend hali ulanmagan — vaqtincha tekshirilmaydi.";
+      loginAvailable = true; validateStep2(); return;
+    }
+    try {
+      const res = await fetch(`${API_URL}?action=checkLogin&login=${encodeURIComponent(val)}`);
+      const data = await res.json();
+      if (data.exists){
+        loginFieldHint.textContent = 'Bu login band, boshqasini tanlang.';
+        loginFieldHint.classList.add('err');
+        loginAvailable = false;
+      } else {
+        loginFieldHint.textContent = "✓ Bu login bo'sh, olishingiz mumkin.";
+        loginFieldHint.classList.remove('err');
+        loginAvailable = true;
+      }
+    } catch(e){
+      loginFieldHint.textContent = "Tekshirib bo'lmadi, internetni tekshiring.";
+      loginAvailable = false;
+    }
+    validateStep2();
+  }, 500);
+});
+fPass.addEventListener('input', validateStep2);
+nextStep2.addEventListener('click', () => {
+  userData.login = fLogin.value.trim();
+  userData.password = fPass.value;
+  showStep(3);
+});
+document.getElementById('backStep2').addEventListener('click', () => showStep(1));
+document.getElementById('backStep3').addEventListener('click', () => showStep(2));
+
+// ---- Step 3: phone + submit ----
+document.getElementById('finishBtn').addEventListener('click', async () => {
+  const phoneVal = document.getElementById('fPhone').value.replace(/\D/g,'');
+  if (phoneVal.length < 9){ alert("Telefon raqamni to'liq kiriting."); return; }
+  userData.phone = '+998' + phoneVal;
+  showStep('installing');
+  await runInstallSequence();
+});
+
+async function runInstallSequence(){
+  const fill = document.getElementById('installFill');
+  const text = document.getElementById('installText');
+  const messages = ["MA'LUMOTLAR YUBORILMOQDA...","LOGIN TEKSHIRILMOQDA...","PROFIL YARATILMOQDA...","DEYARLI TAYYOR..."];
+  let pct = 0, i = 0;
+  text.textContent = messages[0];
+  const interval = setInterval(() => {
+    pct += 3;
+    fill.style.width = Math.min(pct,90) + '%';
+    if (pct % 22 < 3 && i < messages.length - 1){ i++; text.textContent = messages[i]; }
+  }, 60);
+
+  let ok = true, errMsg = '';
+  if (API_READY){
+    try {
+      const res = await fetch(API_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify({ action:'register', fullName:userData.fullName, login:userData.login, password:userData.password, phone:userData.phone, dream:userData.dream })
+      });
+      const data = await res.json();
+      ok = data.success;
+      errMsg = data.error || '';
+    } catch(e){ ok = true; /* offline fallback: allow local-only use */ }
+  }
+
+  clearInterval(interval);
+  fill.style.width = '100%';
+  if (!ok){
+    text.textContent = "XATOLIK: " + errMsg;
+    setTimeout(() => { showStep(2); }, 1800);
+    return;
+  }
+  setTimeout(finishRegistration, 400);
+}
+
+function finishRegistration(){
+  localStorage.setItem('fie3_user', JSON.stringify(userData));
+  loadCounter();
+  enterDashboard();
+}
+
+function enterDashboard(){
+  document.getElementById('heroSection').style.display = 'none';
+  document.getElementById('dashboard').classList.add('active');
+  document.getElementById('dashName').textContent = 'Salom, ' + userData.fullName.split(' ')[0] + '!';
+  document.getElementById('navStatus').textContent = userData.login.toUpperCase();
+  document.getElementById('logoutBtn').style.display = 'inline';
+  document.getElementById('dashboard').scrollIntoView({behavior:'smooth', block:'start'});
+  updateStreak();
+  refreshIeltsLock();
+}
+
+// ---- Login (returning user) ----
+document.getElementById('loginBtn').addEventListener('click', async () => {
+  const login = document.getElementById('loginLoginInput').value.trim();
+  const pass = document.getElementById('loginPassInput').value;
+  const hint = document.getElementById('loginHint');
+  if (!login || !pass){ hint.textContent = "Login va parolni kiriting."; hint.classList.add('err'); return; }
+
+  const cached = JSON.parse(localStorage.getItem('fie3_user') || '{}');
+  if (cached.login === login && cached.password === pass){
+    userData = cached;
+    enterDashboard();
+    return;
+  }
+
+  if (!API_READY){
+    hint.textContent = "Backend hali ulanmagan, shu qurilmada avval ro'yxatdan o'tgan bo'lishingiz kerak.";
+    hint.classList.add('err');
+    return;
+  }
+  hint.textContent = "Tekshirilmoqda..."; hint.classList.remove('err');
+  try {
+    const res = await fetch(API_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify({ action:'login', login, password:pass })
+    });
+    const data = await res.json();
+    if (data.success){
+      userData = { fullName:data.user.fullName, login:data.user.login, password:pass, phone:data.user.phone, dream:data.user.dream };
+      localStorage.setItem('fie3_user', JSON.stringify(userData));
+      enterDashboard();
+    } else {
+      hint.textContent = data.error || "Kirishda xatolik.";
+      hint.classList.add('err');
+    }
+  } catch(e){
+    hint.textContent = "Ulanishda xatolik, internetni tekshiring.";
+    hint.classList.add('err');
+  }
+});
+
+function logoutUser(){
+  document.getElementById('dashboard').classList.remove('active');
+  document.getElementById('moduleView').classList.remove('active');
+  document.getElementById('heroSection').style.display = 'flex';
+  document.getElementById('installCard').classList.remove('active');
+  document.getElementById('logoutBtn').style.display = 'none';
+  document.getElementById('navStatus').textContent = 'MEHMON';
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+// ============ STREAK ============
+function updateStreak(){
+  const today = new Date().toDateString();
+  const last = localStorage.getItem('fie3_lastActive');
+  let streak = parseInt(localStorage.getItem('fie3_streak') || '0');
+  if (last !== today){
+    const yesterday = new Date(Date.now() - 86400000).toDateString();
+    streak = (last === yesterday) ? streak + 1 : 1;
+    localStorage.setItem('fie3_streak', streak.toString());
+    localStorage.setItem('fie3_lastActive', today);
+  }
+  const line = document.getElementById('streakLine');
+  if (line) line.textContent = `🔥 ${streak} kunlik seriya`;
+}
+
+// ============ MODULE SWITCHING ============
+document.querySelectorAll('.module-tile').forEach(tile => {
+  tile.addEventListener('click', () => {
+    if (tile.disabled) return;
+    const key = tile.dataset.module;
+    const data = moduleData[key];
+    if (!data) return;
+    document.getElementById('moduleContent').innerHTML = `
+      <div class="module-header"><div class="tag mono">${data.tag}</div><h2>${data.title}</h2><p>${data.desc}</p></div>
+      ${data.render()}
+    `;
+    document.getElementById('dashboard').classList.remove('active');
+    document.getElementById('moduleView').classList.add('active');
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+});
+document.getElementById('backToDash').addEventListener('click', () => {
+  document.getElementById('moduleView').classList.remove('active');
+  document.getElementById('dashboard').classList.add('active');
+  refreshIeltsLock();
+  window.scrollTo({top:0, behavior:'smooth'});
+});
+
+function refreshIeltsLock(){
+  const complete = isDayCourseComplete();
+  const tile = document.getElementById('ieltsTile');
+  const lock = document.getElementById('ieltsLock');
+  if (complete){ tile.disabled = false; lock.textContent = '🔓'; }
+  else { tile.disabled = true; lock.textContent = '🔒'; }
+}
+
+function toggleReveal(id){ document.getElementById(id).classList.toggle('open'); }
+
+// ============ PRONUNCIATION PRACTICE (TTS) ============
+function speakWord(word){
+  const synth = window.speechSynthesis;
+  if (!synth) return;
+  synth.cancel();
+  const utter = new SpeechSynthesisUtterance(word);
+  utter.lang = 'en-US';
+  utter.rate = 0.85;
+  synth.speak(utter);
+}
+function renderPronunciationBox(words){
+  return `
+    <div class="pron-box">
+      <div class="pron-title">🎧 Talaffuz mashqi</div>
+      ${words.map(w => `
+        <div class="pron-word">
+          <button class="pron-play" onclick="speakWord('${w.word.replace(/'/g,"\\'")}')">▶</button>
+          <div>
+            <div class="pron-text">${w.word}</div>
+            <div class="pron-hint">${w.hint}</div>
+          </div>
+        </div>
+      `).join('')}
+      <div class="field-hint" style="margin-top:8px;">Har bir so'zni tinglang, so'ng ovoz chiqarib o'zingiz ham talaffuz qilib ko'ring.</div>
+    </div>
+  `;
+}
+function askQuestionButton(dayNum){
+  return `<a class="ask-btn" href="https://t.me/diiyor4" target="_blank" rel="noopener">💬 ${dayNum}-kun bo'yicha savolim bor</a>`;
+}
+
+// ============ 100-DAY (50-DAY) ENGLISH COURSE ============
+const TOTAL_DAYS_PLANNED = 50;
+const dayCourse = [
+  {
+    day: 1, title: "Harflar, salom va \"bo'lmoq\" fe'li",
+    lesson: `
+      <h4>Ingliz alifbosi</h4>
+      <p>Ingliz tilida 26 ta harf bor. Ulardan beshtasi unli tovush: <strong>A, E, I, O, U</strong>. Qolgan 21 tasi undosh hisoblanadi.</p>
+      <h4>Kim bilan qanday salomlashamiz</h4>
+      <table>
+        <tr><th>Ibora</th><th>Qachon</th></tr>
+        <tr><td>Hi / Hello</td><td>Har qanday vaqtda, norasmiy</td></tr>
+        <tr><td>Good morning</td><td>Ertalab</td></tr>
+        <tr><td>Good afternoon</td><td>Tushdan keyin</td></tr>
+        <tr><td>Good evening</td><td>Kechqurun</td></tr>
+      </table>
+      <h4>O'zingizni tanishtirish</h4>
+      <ul>
+        <li><strong>My name is ...</strong> — Mening ismim ...</li>
+        <li><strong>I am from ...</strong> — Men ...danman</li>
+        <li><strong>Nice to meet you.</strong> — Tanishganimdan xursandman.</li>
+      </ul>
+      <h4>"To be" fe'li — ingliz tilining yuragi</h4>
+      <table>
+        <tr><th>Kim</th><th>Shakl</th><th>Misol</th></tr>
+        <tr><td>I</td><td>am</td><td>I am a student.</td></tr>
+        <tr><td>He / She / It</td><td>is</td><td>He is my brother.</td></tr>
+        <tr><td>You / We / They</td><td>are</td><td>We are friends.</td></tr>
+      </table>
+    `,
+    vocab: [
+      { word:"Hello", hint:"Salom" },
+      { word:"Good morning", hint:"Xayrli tong" },
+      { word:"My name is", hint:"Mening ismim..." },
+      { word:"Nice to meet you", hint:"Tanishganimdan xursandman" },
+      { word:"Friend", hint:"Do'st" }
+    ],
+    questions: [
+      { q:"How many letters does the English alphabet have?", opts:["24","25","26","27"], correct:2 },
+      { q:"Which of these is a vowel?", opts:["B","F","O","T"], correct:2 },
+      { q:"What do you say to a stranger in the morning?", opts:["Good night","Good morning","Goodbye","Sorry"], correct:1 },
+      { q:"\"Mening ismim...\" ni ingliz tilida qanday aytamiz?", opts:["I am from...","My name is...","Nice to meet you.","How are you?"], correct:1 },
+      { q:"I ___ a student.", opts:["is","am","are","be"], correct:1 },
+      { q:"She ___ my sister.", opts:["am","is","are","been"], correct:1 },
+      { q:"They ___ from Tashkent.", opts:["is","am","are","be"], correct:2 },
+      { q:"We ___ good friends.", opts:["am","is","are","be"], correct:2 },
+      { q:"He ___ a teacher.", opts:["am","is","are","been"], correct:1 },
+      { q:"Which greeting fits the evening?", opts:["Good morning","Good afternoon","Good evening","Good day"], correct:2 },
+      { q:"\"Tanishganimdan xursandman\" ni tarjima qiling.", opts:["Goodbye","See you later","Nice to meet you","Excuse me"], correct:2 },
+      { q:"It ___ a nice day today.", opts:["am","is","are","be"], correct:1 },
+      { q:"You ___ my best friend.", opts:["am","is","are","be"], correct:2 },
+      { q:"Choose the vowel among these: N, P, U, S.", opts:["N","P","U","S"], correct:2 },
+      { q:"I am ___ Uzbekistan.", opts:["from","in","at","on"], correct:0 },
+      { q:"Which is a formal way to say goodbye?", opts:["Bye","See ya","Goodbye","Later"], correct:2 },
+      { q:"They are my classmates. \"They\" refers to:", opts:["One person","Two or more people","A place","A thing"], correct:1 },
+      { q:"He and I ___ friends.", opts:["am","is","are","be"], correct:2 },
+      { q:"What is the first letter of the English alphabet?", opts:["A","B","Z","M"], correct:0 },
+      { q:"Choose the correct sentence.", opts:["She are a nurse.","She is a nurse.","She am a nurse.","She be a nurse."], correct:1 }
+    ]
+  },
+  {
+    day: 2, title: "Sonlar va ranglar",
+    lesson: `
+      <h4>Sonlar (0–20)</h4>
+      <p>Zero, One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Eleven, Twelve, Thirteen, Fourteen, Fifteen, Sixteen, Seventeen, Eighteen, Nineteen, Twenty.</p>
+      <h4>Asosiy ranglar</h4>
+      <table>
+        <tr><th>So'z</th><th>Ma'nosi</th></tr>
+        <tr><td>Red</td><td>Qizil</td></tr>
+        <tr><td>Blue</td><td>Ko'k</td></tr>
+        <tr><td>Green</td><td>Yashil</td></tr>
+        <tr><td>Yellow</td><td>Sariq</td></tr>
+        <tr><td>White / Black</td><td>Oq / Qora</td></tr>
+      </table>
+      <h4>"How many" savoli</h4>
+      <p>Miqdorni so'rash uchun <strong>How many...?</strong> ishlatiladi. Masalan: <em>How many books do you have?</em> — Nechta kitobingiz bor?</p>
+      <h4>Ko'plik shakli (Plural nouns)</h4>
+      <p>Odatda otga <strong>-s</strong> qo'shiladi: book → books, cat → cats. So'z s/x/sh/ch bilan tugasa, <strong>-es</strong> qo'shiladi: box → boxes. Ba'zi so'zlar maxsus shaklga ega: child → children.</p>
+    `,
+    vocab: [
+      { word:"One, two, three", hint:"Bir, ikki, uch" },
+      { word:"Red", hint:"Qizil" },
+      { word:"Blue", hint:"Ko'k" },
+      { word:"How many", hint:"Nechta" },
+      { word:"Books", hint:"Kitoblar (ko'plik)" }
+    ],
+    questions: [
+      { q:"What number is \"seven\"?", opts:["6","7","8","9"], correct:1 },
+      { q:"What number is \"twelve\"?", opts:["11","12","13","14"], correct:1 },
+      { q:"What color is the sky on a clear day?", opts:["Red","Green","Blue","Black"], correct:2 },
+      { q:"What color is grass?", opts:["Blue","Green","Yellow","Purple"], correct:1 },
+      { q:"Choose the plural of \"book\".", opts:["Book","Books","Bookes","Bookies"], correct:1 },
+      { q:"Choose the plural of \"cat\".", opts:["Cat","Cates","Cats","Caties"], correct:2 },
+      { q:"What is the plural of \"child\"?", opts:["Childs","Childes","Children","Child"], correct:2 },
+      { q:"How many ___ do you have?", opts:["book","books","booking","booked"], correct:1 },
+      { q:"What number is \"twenty\"?", opts:["12","20","2","22"], correct:1 },
+      { q:"What number comes after \"nine\"?", opts:["Eight","Ten","Eleven","Nine"], correct:1 },
+      { q:"What color is a banana?", opts:["Red","Yellow","Blue","Black"], correct:1 },
+      { q:"What number is \"fifteen\"?", opts:["5","50","15","115"], correct:2 },
+      { q:"Choose the correct plural: one apple, two ___.", opts:["apple","apples","appels","applies"], correct:1 },
+      { q:"What number is \"zero\"?", opts:["0","1","10","100"], correct:0 },
+      { q:"\"How many\" is used to ask about:", opts:["Quality","Quantity","Place","Time"], correct:1 },
+      { q:"What number is \"eighteen\"?", opts:["8","80","18","180"], correct:2 },
+      { q:"What color do you get by mixing blue and yellow?", opts:["Red","Green","Purple","Orange"], correct:1 },
+      { q:"Choose the plural of \"box\".", opts:["Box","Boxs","Boxes","Boxies"], correct:2 },
+      { q:"What number is \"eleven\"?", opts:["11","12","1","111"], correct:0 },
+      { q:"What color is snow?", opts:["Black","White","Blue","Green"], correct:1 }
+    ]
+  },
+  {
+    day: 3, title: "Oila a'zolari va egalik olmoshlari",
+    lesson: `
+      <h4>Oila a'zolari</h4>
+      <table>
+        <tr><th>So'z</th><th>Ma'nosi</th></tr>
+        <tr><td>Father</td><td>Ota</td></tr>
+        <tr><td>Mother</td><td>Ona</td></tr>
+        <tr><td>Brother</td><td>Aka / Uka</td></tr>
+        <tr><td>Sister</td><td>Opa / Singil</td></tr>
+        <tr><td>Son / Daughter</td><td>O'g'il / Qiz</td></tr>
+      </table>
+      <h4>Egalik olmoshlari (Possessive adjectives)</h4>
+      <table>
+        <tr><th>Olmosh</th><th>Egalik shakli</th></tr>
+        <tr><td>I</td><td>my</td></tr>
+        <tr><td>You</td><td>your</td></tr>
+        <tr><td>He / She</td><td>his / her</td></tr>
+        <tr><td>We / They</td><td>our / their</td></tr>
+      </table>
+      <h4>'s qo'shimchasi (egalikni ko'rsatish)</h4>
+      <p>Masalan: <strong>This is Ali's book.</strong> — Bu Alining kitobi. Ismga to'g'ridan-to'g'ri <strong>'s</strong> qo'shiladi.</p>
+      <h4>Oddiy savol-javob</h4>
+      <p><em>Do you have a brother?</em> — Yes, I do. / No, I don't.</p>
+    `,
+    vocab: [
+      { word:"Father", hint:"Ota" },
+      { word:"Mother", hint:"Ona" },
+      { word:"Brother", hint:"Aka/Uka" },
+      { word:"Sister", hint:"Opa/Singil" },
+      { word:"Family", hint:"Oila" }
+    ],
+    questions: [
+      { q:"\"Ota\" ni ingliz tilida qanday aytamiz?", opts:["Mother","Father","Brother","Sister"], correct:1 },
+      { q:"\"Opa/singil\" so'zi qaysi?", opts:["Brother","Sister","Son","Daughter"], correct:1 },
+      { q:"This is ___ book. (mening)", opts:["me","I","my","mine"], correct:2 },
+      { q:"___ car is red. (uning — erkak)", opts:["Her","His","Its","Their"], correct:1 },
+      { q:"___ car is blue. (uning — ayol)", opts:["His","Her","Its","Our"], correct:1 },
+      { q:"This is Ali's ___.", opts:["book","booking","booked","to book"], correct:0 },
+      { q:"\"O'g'il\" ingliz tilida?", opts:["Daughter","Son","Sister","Brother"], correct:1 },
+      { q:"\"Qiz (farzand)\" ingliz tilida?", opts:["Son","Daughter","Sister","Mother"], correct:1 },
+      { q:"___ names are Tom and Jerry. (ularning)", opts:["Our","Their","Its","Your"], correct:1 },
+      { q:"Do you have a brother? — Yes, I ___.", opts:["am","do","have","is"], correct:1 },
+      { q:"This is ___ house. (bizning)", opts:["Our","Their","Its","My"], correct:0 },
+      { q:"Whose book is this? It is ___ book.", opts:["Ali","Ali's","Alis","Ali're"], correct:1 },
+      { q:"\"Ona\" ingliz tilida?", opts:["Father","Mother","Sister","Aunt"], correct:1 },
+      { q:"\"Family\" so'zi nima ma'noni bildiradi?", opts:["Oila","Do'stlar","Maktab","Ish"], correct:0 },
+      { q:"___ dog is very friendly. (mening)", opts:["Me","My","I","Mine"], correct:1 },
+      { q:"This pen is ___. (mustaqil shakl)", opts:["my","mine","I","me"], correct:1 },
+      { q:"Whose is this bag? It's ___ bag.", opts:["Malika","Malika's","Malikas","Malika're"], correct:1 },
+      { q:"\"Aka/Uka\" ingliz tilida?", opts:["Sister","Brother","Mother","Father"], correct:1 },
+      { q:"___ books are on the table. (bizning)", opts:["Our","Us","We","Ours"], correct:0 },
+      { q:"Choose the correct sentence.", opts:["This is my father book.","This is my father's book.","This is my fathers book.","This is my father books."], correct:1 }
+    ]
+  },
+  {
+    day: 4, title: "Kundalik harakatlar va Present Simple zamoni",
+    lesson: `
+      <h4>Present Simple zamoni</h4>
+      <p>Bu zamon <strong>odatiy, doimiy harakatlar</strong>ni ifodalash uchun ishlatiladi — masalan, har kuni takrorlanadigan ishlar.</p>
+      <table>
+        <tr><th>Kim</th><th>Shakl</th><th>Misol</th></tr>
+        <tr><td>I / You / We / They</td><td>fe'l (o'zgarishsiz)</td><td>I eat breakfast.</td></tr>
+        <tr><td>He / She / It</td><td>fe'l + s/es</td><td>She eats breakfast.</td></tr>
+      </table>
+      <h4>Kundalik fe'llar</h4>
+      <p>Wake up (uyg'onmoq), eat (yemoq), go (bormoq), work/study (ishlamoq/o'qimoq), sleep (uxlamoq).</p>
+      <h4>Chastota qo'shimchalari (Frequency adverbs)</h4>
+      <table>
+        <tr><th>So'z</th><th>Ma'nosi</th></tr>
+        <tr><td>Always</td><td>Har doim</td></tr>
+        <tr><td>Usually</td><td>Odatda</td></tr>
+        <tr><td>Sometimes</td><td>Ba'zan</td></tr>
+        <tr><td>Never</td><td>Hech qachon</td></tr>
+      </table>
+      <h4>Savol va inkor shakllari</h4>
+      <p>Savol: <strong>Do/Does</strong> + ega + fe'l? Masalan: <em>Does she like tea?</em></p>
+      <p>Inkor: <strong>don't/doesn't</strong> + fe'l. Masalan: <em>He doesn't like coffee.</em></p>
+    `,
+    vocab: [
+      { word:"Wake up", hint:"Uyg'onmoq" },
+      { word:"Every day", hint:"Har kuni" },
+      { word:"Always", hint:"Har doim" },
+      { word:"Never", hint:"Hech qachon" },
+      { word:"Do you like...?", hint:"...ni yoqtirasizmi?" }
+    ],
+    questions: [
+      { q:"She ___ up at 7 am every day.", opts:["wake","wakes","waking","woke"], correct:1 },
+      { q:"I ___ breakfast every morning.", opts:["eat","eats","eating","ate"], correct:0 },
+      { q:"They ___ to school by bus.", opts:["go","goes","going","went"], correct:0 },
+      { q:"He ___ TV in the evening.", opts:["watch","watches","watching","watched"], correct:1 },
+      { q:"Do you ___ coffee?", opts:["drink","drinks","drinking","drank"], correct:0 },
+      { q:"___ she like tea?", opts:["Do","Does","Is","Are"], correct:1 },
+      { q:"I ___ like spicy food.", opts:["don't","doesn't","not","no"], correct:0 },
+      { q:"He ___ like cold weather.", opts:["don't","doesn't","not","no"], correct:1 },
+      { q:"Which word means \"har doim\"?", opts:["Never","Sometimes","Always","Often"], correct:2 },
+      { q:"Which word means \"hech qachon\"?", opts:["Always","Never","Usually","Often"], correct:1 },
+      { q:"My father ___ works on Sundays. (kamdan-kam)", opts:["always","usually","never","rarely"], correct:3 },
+      { q:"We ___ English every day.", opts:["study","studies","studying","studied"], correct:0 },
+      { q:"Does he live in Tashkent? — Yes, he ___.", opts:["do","does","is","live"], correct:1 },
+      { q:"Where ___ you work?", opts:["do","does","is","are"], correct:0 },
+      { q:"What time ___ she wake up?", opts:["do","does","is","are"], correct:1 },
+      { q:"I usually ___ to bed at 10 pm.", opts:["go","goes","going","went"], correct:0 },
+      { q:"He never ___ breakfast.", opts:["skip","skips","skipping","skipped"], correct:1 },
+      { q:"Choose the correct question.", opts:["Does you like music?","Do you like music?","Do you likes music?","Does you likes music?"], correct:1 },
+      { q:"She ___ her homework every evening.", opts:["do","does","doing","did"], correct:1 },
+      { q:"Choose the correct sentence.", opts:["I doesn't like tea.","I don't like tea.","I not like tea.","I isn't like tea."], correct:1 }
+    ]
+  },
+  {
+    day: 5, title: "Vaqt va kun tartibi",
+    lesson: `
+      <h4>Vaqtni so'rash va aytish</h4>
+      <p><strong>What time is it?</strong> — Soat nechida? / <strong>It's 7 o'clock.</strong> — Soat 7.</p>
+      <table>
+        <tr><th>Ibora</th><th>Vaqt</th></tr>
+        <tr><td>Half past six</td><td>6:30</td></tr>
+        <tr><td>Quarter past six</td><td>6:15</td></tr>
+        <tr><td>Quarter to seven</td><td>6:45</td></tr>
+      </table>
+      <h4>Kunning qismlari</h4>
+      <p>Morning (ertalab), Afternoon (tushdan keyin), Evening (kechqurun), Night (tun).</p>
+      <h4>Hafta kunlari</h4>
+      <p>Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday.</p>
+      <h4>Kun tartibi haqida gapirish</h4>
+      <p>Misol: <em>I wake up at 7 o'clock. I have breakfast at half past seven. I go to school at 8 o'clock.</em></p>
+    `,
+    vocab: [
+      { word:"What time is it?", hint:"Soat nechida?" },
+      { word:"O'clock", hint:"Soat (aniq)" },
+      { word:"Monday", hint:"Dushanba" },
+      { word:"Half past", hint:"Yarim (30 daqiqa o'tgan)" },
+      { word:"Daily routine", hint:"Kunlik tartib" }
+    ],
+    questions: [
+      { q:"What time is it? — It's 7 ___.", opts:["o'clock","o'clocks","clock","clocks"], correct:0 },
+      { q:"Which day comes after Wednesday?", opts:["Tuesday","Thursday","Friday","Monday"], correct:1 },
+      { q:"Which day comes before Monday?", opts:["Sunday","Tuesday","Saturday","Friday"], correct:0 },
+      { q:"What does \"half past six\" mean?", opts:["6:00","6:15","6:30","6:45"], correct:2 },
+      { q:"What does \"quarter past six\" mean?", opts:["6:00","6:15","6:30","6:45"], correct:1 },
+      { q:"What does \"quarter to seven\" mean?", opts:["6:45","7:15","7:00","6:15"], correct:0 },
+      { q:"Which word means \"ertalab\"?", opts:["Morning","Afternoon","Evening","Night"], correct:0 },
+      { q:"Which word means \"kechqurun\"?", opts:["Morning","Afternoon","Evening","Night"], correct:2 },
+      { q:"How many days are there in a week?", opts:["5","6","7","8"], correct:2 },
+      { q:"Which is the first day of the week in English calendars?", opts:["Monday","Sunday","Friday","Saturday"], correct:1 },
+      { q:"I wake up ___ 7 o'clock.", opts:["in","on","at","to"], correct:2 },
+      { q:"I have breakfast ___ the morning.", opts:["in","on","at","to"], correct:0 },
+      { q:"Which day is part of the weekend?", opts:["Monday","Wednesday","Saturday","Thursday"], correct:2 },
+      { q:"\"Daily routine\" nima ma'noni bildiradi?", opts:["Kunlik tartib","Haftalik reja","Yillik bayram","Oylik maosh"], correct:0 },
+      { q:"School starts ___ 8 o'clock.", opts:["in","on","at","to"], correct:2 },
+      { q:"I go to bed ___ night.", opts:["in","on","at","to"], correct:2 },
+      { q:"What is 3:30?", opts:["Half past three","Quarter past three","Quarter to three","Half past four"], correct:0 },
+      { q:"Which day comes between Thursday and Saturday?", opts:["Wednesday","Friday","Sunday","Monday"], correct:1 },
+      { q:"\"What time is it?\" savoliga to'g'ri javob:", opts:["It's Monday.","It's 5 o'clock.","It's red.","It's my book."], correct:1 },
+      { q:"Choose the correct sentence.", opts:["I eats breakfast at 7.","I eat breakfast at 7.","I eating breakfast at 7.","I ate breakfast at 7 tomorrow."], correct:1 }
+    ]
+  },
+  {
+    day: 6, title: "Sifatlar va qarama-qarshi ma'nolar",
+    lesson: `
+      <h4>Sifatlar</h4>
+      <p>Sifatlar predmet yoki insonning xususiyatini bildiradi. Odatda otdan oldin keladi: <em>a big house</em>, yoki "to be" fe'lidan keyin: <em>The house is big.</em></p>
+      <h4>Asosiy qarama-qarshi juftliklar</h4>
+      <table>
+        <tr><th>So'z</th><th>Qarama-qarshi</th></tr>
+        <tr><td>Big (katta)</td><td>Small (kichik)</td></tr>
+        <tr><td>Hot (issiq)</td><td>Cold (sovuq)</td></tr>
+        <tr><td>Happy (baxtli)</td><td>Sad (g'amgin)</td></tr>
+        <tr><td>Fast (tez)</td><td>Slow (sekin)</td></tr>
+        <tr><td>Easy (oson)</td><td>Difficult (qiyin)</td></tr>
+      </table>
+      <h4>"Very" so'zi</h4>
+      <p>Sifatni kuchaytirish uchun <strong>very</strong> ishlatiladi: <em>very big</em> — juda katta.</p>
+    `,
+    vocab: [ { word:"Big", hint:"Katta" }, { word:"Small", hint:"Kichik" }, { word:"Happy", hint:"Baxtli" }, { word:"Hot", hint:"Issiq" }, { word:"Cold", hint:"Sovuq" } ],
+    questions: [
+      { q:"Opposite of \"big\" is ___.", opts:["Small","Tall","Fast","Old"], correct:0 },
+      { q:"Opposite of \"hot\" is ___.", opts:["Warm","Cold","Fast","Wet"], correct:1 },
+      { q:"Opposite of \"happy\" is ___.", opts:["Angry","Sad","Tired","Sick"], correct:1 },
+      { q:"Opposite of \"fast\" is ___.", opts:["Slow","Quick","Big","Loud"], correct:0 },
+      { q:"Opposite of \"old\" (narsa haqida) is ___.", opts:["Young","New","Big","Fast"], correct:1 },
+      { q:"Opposite of \"easy\" is ___.", opts:["Simple","Difficult","Fast","Slow"], correct:1 },
+      { q:"The house is very ___.", opts:["big","bigly","bigness","bigger than"], correct:0 },
+      { q:"Choose the correct sentence.", opts:["She is happy very.","She is very happy.","She very is happy.","Very she is happy."], correct:1 },
+      { q:"Opposite of \"clean\" is ___.", opts:["Dirty","Wet","Cold","Empty"], correct:0 },
+      { q:"Opposite of \"full\" is ___.", opts:["Empty","Small","Cold","Slow"], correct:0 },
+      { q:"This soup is very ___.", opts:["hot","hotly","heat","hottest"], correct:0 },
+      { q:"Opposite of \"strong\" is ___.", opts:["Weak","Small","Slow","Sad"], correct:0 },
+      { q:"Which word describes weather that is very cold?", opts:["Freezing","Boiling","Warm","Mild"], correct:0 },
+      { q:"Opposite of \"expensive\" is ___.", opts:["Cheap","Rich","Poor","Costly"], correct:0 },
+      { q:"This book is very ___.", opts:["interesting","interestingly","interest","interested"], correct:0 },
+      { q:"Opposite of \"young\" is ___.", opts:["Old","New","Small","Weak"], correct:0 },
+      { q:"Opposite of \"wet\" is ___.", opts:["Dry","Cold","Clean","Fast"], correct:0 },
+      { q:"Choose the adjective: \"The car is fast.\"", opts:["Car","Is","Fast","The"], correct:2 },
+      { q:"Opposite of \"difficult\" is ___.", opts:["Hard","Easy","Slow","Small"], correct:1 },
+      { q:"Choose the correct sentence.", opts:["This is very good idea.","This is a very good idea.","This a very good idea is.","This very is a good idea."], correct:1 }
+    ]
+  },
+  {
+    day: 7, title: "\"There is / There are\" va joy predloglari",
+    lesson: `
+      <h4>There is / There are</h4>
+      <p>Biror narsaning mavjudligini aytish uchun ishlatiladi: <strong>There is</strong> (birlik), <strong>There are</strong> (ko'plik).</p>
+      <p>Masalan: <em>There is a book on the table.</em> / <em>There are two cats in the room.</em></p>
+      <h4>Joy predloglari (Prepositions of place)</h4>
+      <table>
+        <tr><th>So'z</th><th>Ma'nosi</th></tr>
+        <tr><td>In</td><td>Ichida</td></tr>
+        <tr><td>On</td><td>Ustida</td></tr>
+        <tr><td>Under</td><td>Ostida</td></tr>
+        <tr><td>Next to</td><td>Yonida</td></tr>
+        <tr><td>Between</td><td>Orasida</td></tr>
+      </table>
+      <h4>Savol shakli</h4>
+      <p><strong>Is there...?</strong> / <strong>Are there...?</strong> — masalan: <em>Is there a pen on the table?</em></p>
+    `,
+    vocab: [ { word:"There is", hint:"Bor (birlik)" }, { word:"There are", hint:"Bor (ko'plik)" }, { word:"On the table", hint:"Stol ustida" }, { word:"Under", hint:"Ostida" }, { word:"Next to", hint:"Yonida" } ],
+    questions: [
+      { q:"___ a book on the table.", opts:["There is","There are","It is","Is there"], correct:0 },
+      { q:"___ two cats in the room.", opts:["There is","There are","It is","Are there"], correct:1 },
+      { q:"The cat is ___ the box.", opts:["on","in","under","next to"], correct:1 },
+      { q:"The lamp is ___ the table.", opts:["on","in","under","next to"], correct:0 },
+      { q:"The shoes are ___ the bed.", opts:["on","in","under","between"], correct:2 },
+      { q:"The chair is ___ the table.", opts:["on","in","under","next to"], correct:3 },
+      { q:"___ any milk in the fridge?", opts:["Is there","Are there","There is","There are"], correct:0 },
+      { q:"___ many students in the class.", opts:["There is","There are","It is","Is there"], correct:1 },
+      { q:"The book is ___ the two pens.", opts:["in","on","between","under"], correct:2 },
+      { q:"Choose the correct question form.", opts:["There is a pen?","Is there a pen?","A pen there is?","There a pen is?"], correct:1 },
+      { q:"___ a big park near my house.", opts:["There is","There are","It is","Are there"], correct:0 },
+      { q:"My keys are ___ my bag.", opts:["in","on","under","between"], correct:0 },
+      { q:"Choose the correct negative form.", opts:["There isn't any water.","There not is water.","There no is water.","There is any water not."], correct:0 },
+      { q:"___ three windows in this room.", opts:["There is","There are","It is","Is there"], correct:1 },
+      { q:"The picture is ___ the wall.", opts:["on","in","under","between"], correct:0 },
+      { q:"Are there any apples? — No, ___.", opts:["there isn't","there aren't","there is","there are"], correct:1 },
+      { q:"The dog is sleeping ___ the tree.", opts:["on","in","under","between"], correct:2 },
+      { q:"Choose the correct sentence.", opts:["There is a lot of books.","There are a lot of books.","There is many books.","It are many books."], correct:1 },
+      { q:"My phone is ___ the drawer.", opts:["in","on","above","between"], correct:0 },
+      { q:"The library is ___ the school and the park.", opts:["in","on","under","between"], correct:3 }
+    ]
+  },
+  {
+    day: 8, title: "\"Can / Can't\" — qobiliyat",
+    lesson: `
+      <h4>"Can" modal fe'li</h4>
+      <p><strong>Can</strong> — biror narsani qila olish qobiliyatini bildiradi. Tuzilishi: ega + can/can't + fe'l (asosiy shakl).</p>
+      <p>Masalan: <em>I can swim.</em> / <em>She can't drive.</em></p>
+      <h4>Savol shakli</h4>
+      <p><strong>Can</strong> + ega + fe'l? — <em>Can you speak English?</em></p>
+      <h4>Foydali fe'llar</h4>
+      <p>Swim (suzmoq), drive (haydamoq), cook (ovqat pishirmoq), sing (qo'shiq aytmoq), dance (raqsga tushmoq), speak (gapirmoq).</p>
+    `,
+    vocab: [ { word:"Can", hint:"...a olaman" }, { word:"Can't", hint:"...a olmayman" }, { word:"Swim", hint:"Suzmoq" }, { word:"Cook", hint:"Ovqat pishirmoq" }, { word:"Speak", hint:"Gapirmoq" } ],
+    questions: [
+      { q:"I ___ swim very well.", opts:["can","cans","canning","could to"], correct:0 },
+      { q:"She ___ drive a car.", opts:["can","can't","cans","canning"], correct:1 },
+      { q:"Choose the correct question.", opts:["Can you speak English?","You can speak English?","Can speak you English?","Do you can speak English?"], correct:0 },
+      { q:"He can ___ the piano.", opts:["play","plays","playing","played"], correct:0 },
+      { q:"___ you cook Italian food?", opts:["Do","Can","Are","Is"], correct:1 },
+      { q:"I can't ___ this box, it's too heavy.", opts:["lift","lifts","lifting","lifted"], correct:0 },
+      { q:"Choose the correct negative.", opts:["She can't sings.","She can't sing.","She cant's sing.","She not can sing."], correct:1 },
+      { q:"Birds can ___.", opts:["fly","flies","flying","flew"], correct:0 },
+      { q:"Fish can ___ in water.", opts:["swim","walk","fly","run"], correct:0 },
+      { q:"Can she speak French? — Yes, she ___.", opts:["can","can't","does","is"], correct:0 },
+      { q:"Can they come to the party? — No, they ___.", opts:["can","can't","don't","aren't"], correct:1 },
+      { q:"Choose the correct sentence.", opts:["I can to swim.","I can swim.","I can swims.","I cans swim."], correct:1 },
+      { q:"My brother can ___ very fast.", opts:["run","runs","running","ran"], correct:0 },
+      { q:"___ you help me, please?", opts:["Can","Do","Are","Is"], correct:0 },
+      { q:"She can play the guitar, but she ___ play the piano.", opts:["can","can't","cans","do"], correct:1 },
+      { q:"Choose the modal verb: \"He can dance well.\"", opts:["He","can","dance","well"], correct:1 },
+      { q:"Penguins can't ___.", opts:["fly","swim","walk","eat"], correct:0 },
+      { q:"Can I ___ your pen?", opts:["borrow","borrows","borrowing","borrowed"], correct:0 },
+      { q:"We can ___ English a little.", opts:["speak","speaks","speaking","spoke"], correct:0 },
+      { q:"Choose the correct question.", opts:["Can she cooks?","Can she cook?","Does she can cook?","Can cook she?"], correct:1 }
+    ]
+  },
+  {
+    day: 9, title: "Ovqat, ichimliklar va \"I like / I don't like\"",
+    lesson: `
+      <h4>Ovqat va ichimliklar</h4>
+      <p>Bread (non), rice (guruch), meat (go'sht), water (suv), tea/coffee (choy/qahva), fruit (meva), vegetables (sabzavotlar).</p>
+      <h4>"Like" fe'li bilan fikr bildirish</h4>
+      <p><em>I like apples.</em> / <em>I don't like coffee.</em> / <em>Do you like tea?</em></p>
+      <h4>"Would like" — taklif/iltimos uchun</h4>
+      <p><em>I would like some tea, please.</em> (qisqasi: I'd like) — bu "I like" dan ko'ra muloyimroq, iltimos ma'nosida.</p>
+    `,
+    vocab: [ { word:"Bread", hint:"Non" }, { word:"Water", hint:"Suv" }, { word:"I like", hint:"Menga yoqadi" }, { word:"I don't like", hint:"Menga yoqmaydi" }, { word:"Would like", hint:"Xohlar edim (iltimos)" } ],
+    questions: [
+      { q:"\"Non\" ingliz tilida?", opts:["Rice","Bread","Meat","Water"], correct:1 },
+      { q:"\"Guruch\" ingliz tilida?", opts:["Bread","Rice","Meat","Fruit"], correct:1 },
+      { q:"I ___ apples.", opts:["like","likes","liking","liked"], correct:0 },
+      { q:"She ___ coffee.", opts:["don't like","doesn't like","not like","isn't like"], correct:1 },
+      { q:"Do you ___ tea?", opts:["like","likes","liking","liked"], correct:0 },
+      { q:"I'd like ___ water, please.", opts:["a","an","some","any"], correct:2 },
+      { q:"Choose the polite request.", opts:["Give me water.","I would like some water, please.","Water now!","Water give."], correct:1 },
+      { q:"\"Sabzavotlar\" ingliz tilida?", opts:["Fruits","Vegetables","Meat","Bread"], correct:1 },
+      { q:"Does he like fish? — No, he ___.", opts:["does","doesn't","don't","isn't"], correct:1 },
+      { q:"I ___ like spicy food very much.", opts:["don't","doesn't","not","no"], correct:0 },
+      { q:"\"Meva\" ingliz tilida?", opts:["Vegetable","Fruit","Meat","Bread"], correct:1 },
+      { q:"What would you ___ to drink?", opts:["like","likes","liking","liked"], correct:0 },
+      { q:"Choose the correct sentence.", opts:["I would like a coffee.","I like would a coffee.","I would a coffee like.","Like I would a coffee."], correct:0 },
+      { q:"\"Go'sht\" ingliz tilida?", opts:["Rice","Meat","Bread","Water"], correct:1 },
+      { q:"They ___ vegetables.", opts:["like","likes","liking","liked"], correct:0 },
+      { q:"Would you like some tea? — Yes, ___.", opts:["please","no","don't","can't"], correct:0 },
+      { q:"My mother ___ cooking.", opts:["like","likes","liking","liked"], correct:1 },
+      { q:"Choose the correct negative.", opts:["I no like milk.","I don't like milk.","I not like milk.","I isn't like milk."], correct:1 },
+      { q:"\"Suv\" ingliz tilida?", opts:["Tea","Coffee","Water","Juice"], correct:2 },
+      { q:"Do they like rice? — Yes, they ___.", opts:["do","does","like","are"], correct:0 }
+    ]
+  },
+  {
+    day: 10, title: "Ob-havo va fasllar",
+    lesson: `
+      <h4>Fasllar</h4>
+      <p>Spring (bahor), Summer (yoz), Autumn/Fall (kuz), Winter (qish).</p>
+      <h4>Ob-havo so'zlari</h4>
+      <p>Sunny (quyoshli), Rainy (yomg'irli), Windy (shamolli), Snowy (qorli), Cloudy (bulutli).</p>
+      <h4>Ob-havo haqida gapirish</h4>
+      <p><em>What's the weather like today?</em> — <em>It's sunny.</em></p>
+      <h4>Harorat</h4>
+      <p><em>It's hot / cold / warm / cool today.</em></p>
+    `,
+    vocab: [ { word:"Sunny", hint:"Quyoshli" }, { word:"Rainy", hint:"Yomg'irli" }, { word:"Winter", hint:"Qish" }, { word:"Summer", hint:"Yoz" }, { word:"What's the weather like?", hint:"Ob-havo qanday?" } ],
+    questions: [
+      { q:"\"Yoz\" fasli ingliz tilida?", opts:["Spring","Summer","Autumn","Winter"], correct:1 },
+      { q:"\"Qish\" fasli ingliz tilida?", opts:["Spring","Summer","Autumn","Winter"], correct:3 },
+      { q:"What's the weather like today? — It's ___.", opts:["sunny","rainy","snowy","windy"], correct:0 },
+      { q:"Which season comes after summer?", opts:["Spring","Autumn","Winter","Summer"], correct:1 },
+      { q:"Which word means \"yomg'irli\"?", opts:["Sunny","Rainy","Windy","Cloudy"], correct:1 },
+      { q:"Which word means \"shamolli\"?", opts:["Sunny","Rainy","Windy","Snowy"], correct:2 },
+      { q:"In winter, it often ___.", opts:["snows","snow","snowing","snowed"], correct:0 },
+      { q:"\"Bahor\" fasli ingliz tilida?", opts:["Spring","Summer","Autumn","Winter"], correct:0 },
+      { q:"It's very ___ today, I need a jacket.", opts:["hot","cold","sunny","dry"], correct:1 },
+      { q:"Which season comes before winter?", opts:["Spring","Summer","Autumn","None"], correct:2 },
+      { q:"The sky is full of clouds. It's ___.", opts:["sunny","cloudy","rainy","snowy"], correct:1 },
+      { q:"Choose the correct question.", opts:["What weather is like?","What's the weather like?","How is weather like?","What like is the weather?"], correct:1 },
+      { q:"In summer, the weather is usually ___.", opts:["cold","hot","snowy","freezing"], correct:1 },
+      { q:"\"Kuz\" fasli ingliz tilida?", opts:["Spring","Summer","Autumn","Winter"], correct:2 },
+      { q:"It's raining, so take an ___.", opts:["umbrella","jacket","hat","scarf"], correct:0 },
+      { q:"Choose the correct sentence.", opts:["Today is very sun.","Today is very sunny.","Today is very suns.","Today sun very."], correct:1 },
+      { q:"Which season has the most snow usually?", opts:["Spring","Summer","Autumn","Winter"], correct:3 },
+      { q:"It's ___ outside, wear a coat.", opts:["hot","cold","sunny","dry"], correct:1 },
+      { q:"How many seasons are there in a year?", opts:["2","3","4","5"], correct:2 },
+      { q:"Choose the correct sentence about weather.", opts:["It rain today.","It rains today.","It's raining today.","It raining today."], correct:2 }
+    ]
+  },
+  {
+    day: 11, title: "O'tgan zamon — muntazam fe'llar (Past Simple)",
+    lesson: `
+      <h4>Past Simple — muntazam fe'llar</h4>
+      <p>O'tgan, tugallangan harakatlarni bildiradi. Muntazam fe'llarga <strong>-ed</strong> qo'shiladi: work → worked, play → played, watch → watched.</p>
+      <h4>Was / Were</h4>
+      <table>
+        <tr><th>Kim</th><th>Shakl</th></tr>
+        <tr><td>I / He / She / It</td><td>was</td></tr>
+        <tr><td>You / We / They</td><td>were</td></tr>
+      </table>
+      <h4>Inkor va savol</h4>
+      <p>Inkor: <strong>didn't</strong> + fe'l (asosiy shakl). Savol: <strong>Did</strong> + ega + fe'l?</p>
+    `,
+    vocab: [ { word:"Yesterday", hint:"Kecha" }, { word:"Last week", hint:"O'tgan hafta" }, { word:"Worked", hint:"Ishladi" }, { word:"Was", hint:"Edi (birlik)" }, { word:"Were", hint:"Edi (ko'plik)" } ],
+    questions: [
+      { q:"I ___ football yesterday.", opts:["play","played","plays","playing"], correct:1 },
+      { q:"She ___ at home yesterday.", opts:["was","were","is","are"], correct:0 },
+      { q:"They ___ at the park last Sunday.", opts:["was","were","is","am"], correct:1 },
+      { q:"I ___ TV last night.", opts:["didn't watch","didn't watched","not watched","wasn't watch"], correct:0 },
+      { q:"___ you go to school yesterday?", opts:["Did","Do","Was","Were"], correct:0 },
+      { q:"He ___ his homework yesterday.", opts:["finish","finished","finishes","finishing"], correct:1 },
+      { q:"Choose the correct question.", opts:["Did she worked?","Did she work?","Does she worked?","Was she worked?"], correct:1 },
+      { q:"We ___ very happy yesterday.", opts:["was","were","is","am"], correct:1 },
+      { q:"Choose the correct negative.", opts:["I didn't watched TV.","I didn't watch TV.","I not watched TV.","I wasn't watch TV."], correct:1 },
+      { q:"Last week, I ___ my grandmother.", opts:["visit","visited","visits","visiting"], correct:1 },
+      { q:"Where ___ you yesterday?", opts:["was","were","did","do"], correct:1 },
+      { q:"I ___ born in Tashkent.", opts:["was","were","am","is"], correct:0 },
+      { q:"Choose the correct sentence.", opts:["She studied English last year.","She studies English last year.","She study English last year.","She studying English last year."], correct:0 },
+      { q:"Did you clean your room? — Yes, I ___.", opts:["did","do","does","was"], correct:0 },
+      { q:"Did he call you? — No, he ___.", opts:["didn't","don't","doesn't","wasn't"], correct:0 },
+      { q:"Yesterday ___ a very hot day.", opts:["was","were","is","are"], correct:0 },
+      { q:"My parents ___ not at home yesterday.", opts:["was","were","is","are"], correct:1 },
+      { q:"Choose the correct past form of \"wash\".", opts:["Wash","Washed","Washes","Washing"], correct:1 },
+      { q:"I ___ my mother yesterday.", opts:["help","helped","helps","helping"], correct:1 },
+      { q:"Choose the correct sentence.", opts:["Did you liked the movie?","Did you like the movie?","Do you liked the movie?","Were you like the movie?"], correct:1 }
+    ]
+  },
+  {
+    day: 12, title: "O'tgan zamon — noto'g'ri fe'llar",
+    lesson: `
+      <h4>Noto'g'ri fe'llar (Irregular verbs)</h4>
+      <p>Ba'zi fe'llar -ed qo'shilmasdan, maxsus shaklga o'tadi. Bularni yodlab olish kerak.</p>
+      <table>
+        <tr><th>Asosiy</th><th>O'tgan zamon</th></tr>
+        <tr><td>Go</td><td>Went</td></tr>
+        <tr><td>Eat</td><td>Ate</td></tr>
+        <tr><td>See</td><td>Saw</td></tr>
+        <tr><td>Have</td><td>Had</td></tr>
+        <tr><td>Do</td><td>Did</td></tr>
+        <tr><td>Take</td><td>Took</td></tr>
+        <tr><td>Come</td><td>Came</td></tr>
+        <tr><td>Give</td><td>Gave</td></tr>
+      </table>
+      <p>Inkor va savolda qoida bir xil qoladi: <strong>did</strong> ishlatilib, fe'l asosiy shaklga qaytadi.</p>
+    `,
+    vocab: [ { word:"Went", hint:"Bordi" }, { word:"Ate", hint:"Yedi" }, { word:"Saw", hint:"Ko'rdi" }, { word:"Had", hint:"Ega edi/qildi" }, { word:"Did", hint:"Qildi" } ],
+    questions: [
+      { q:"Yesterday I ___ to the cinema.", opts:["go","went","goes","going"], correct:1 },
+      { q:"I ___ pizza last night.", opts:["eat","ate","eats","eating"], correct:1 },
+      { q:"She ___ a movie yesterday.", opts:["see","saw","sees","seeing"], correct:1 },
+      { q:"We ___ a great time at the party.", opts:["have","had","has","having"], correct:1 },
+      { q:"What ___ you do yesterday?", opts:["did","do","does","were"], correct:0 },
+      { q:"I ___ my homework yesterday.", opts:["do","did","does","doing"], correct:1 },
+      { q:"He ___ his book with him.", opts:["take","took","takes","taking"], correct:1 },
+      { q:"They ___ to Samarkand last summer.", opts:["go","went","goes","going"], correct:1 },
+      { q:"She ___ me a present.", opts:["give","gave","gives","giving"], correct:1 },
+      { q:"Choose the correct negative.", opts:["I didn't went there.","I didn't go there.","I not went there.","I don't went there."], correct:1 },
+      { q:"Did you see him? — Yes, I ___.", opts:["did","do","saw","see"], correct:0 },
+      { q:"He ___ to school by bus yesterday.", opts:["go","goes","went","going"], correct:2 },
+      { q:"What did you eat for breakfast? — I ___ bread and tea.", opts:["eat","ate","eats","eating"], correct:1 },
+      { q:"Choose the correct sentence.", opts:["She comed home late.","She came home late.","She comes home late yesterday.","She coming home late."], correct:1 },
+      { q:"Did they have a good trip? — Yes, they ___.", opts:["did","had","have","has"], correct:0 },
+      { q:"Last year, we ___ to London.", opts:["go","went","goes","going"], correct:1 },
+      { q:"Choose the past tense of \"come\".", opts:["Comed","Came","Comes","Coming"], correct:1 },
+      { q:"Choose the past tense of \"give\".", opts:["Gived","Gave","Gives","Giving"], correct:1 },
+      { q:"Choose the past tense of \"take\".", opts:["Taked","Took","Takes","Taking"], correct:1 },
+      { q:"Choose the correct sentence.", opts:["Did she went home?","Did she go home?","Does she went home?","Was she go home?"], correct:1 }
+    ]
+  },
+  {
+    day: 13, title: "Kasblar",
+    lesson: `
+      <h4>Kasblar</h4>
+      <p>Doctor (shifokor), teacher (o'qituvchi), engineer (muhandis), driver (haydovchi), farmer (fermer), police officer (militsioner), cook (oshpaz), businessman/businesswoman (tadbirkor).</p>
+      <h4>Kasb haqida so'rash</h4>
+      <p><em>What do you do?</em> — <em>I am a teacher.</em> / <em>What does he do?</em> — <em>He is a driver.</em></p>
+      <h4>"Work as" iborasi</h4>
+      <p><em>I work as a doctor.</em> — Men shifokor bo'lib ishlayman.</p>
+    `,
+    vocab: [ { word:"Doctor", hint:"Shifokor" }, { word:"Teacher", hint:"O'qituvchi" }, { word:"What do you do?", hint:"Kasbingiz nima?" }, { word:"I am a...", hint:"Men ...man" }, { word:"Work as", hint:"...bo'lib ishlamoq" } ],
+    questions: [
+      { q:"A person who teaches students is a ___.", opts:["Doctor","Teacher","Driver","Farmer"], correct:1 },
+      { q:"A person who treats sick people is a ___.", opts:["Teacher","Doctor","Cook","Farmer"], correct:1 },
+      { q:"What ___ you do? — I am a teacher.", opts:["do","does","is","are"], correct:0 },
+      { q:"What does he ___? — He is an engineer.", opts:["do","does","doing","did"], correct:0 },
+      { q:"A person who drives a bus or taxi is a ___.", opts:["Driver","Doctor","Farmer","Cook"], correct:0 },
+      { q:"A person who grows crops on a farm is a ___.", opts:["Cook","Farmer","Driver","Teacher"], correct:1 },
+      { q:"I ___ as a nurse.", opts:["work","works","working","worked"], correct:0 },
+      { q:"Choose the correct sentence.", opts:["She is a doctor work.","She works as a doctor.","She work as doctor.","She a doctor works."], correct:1 },
+      { q:"A person who cooks food in a restaurant is a ___.", opts:["Cook","Driver","Farmer","Teacher"], correct:0 },
+      { q:"A person who keeps public order and safety is a ___.", opts:["Police officer","Cook","Farmer","Driver"], correct:0 },
+      { q:"What do you do? — I ___ a student.", opts:["am","is","are","be"], correct:0 },
+      { q:"My father works ___ an engineer.", opts:["as","like","for","in"], correct:0 },
+      { q:"Choose the correct question.", opts:["What you do?","What do you do?","What does you do?","What you does do?"], correct:1 },
+      { q:"A person who owns or runs a business is called a ___.", opts:["Businessman","Farmer","Cook","Driver"], correct:0 },
+      { q:"She ___ a very good teacher.", opts:["is","are","am","be"], correct:0 },
+      { q:"What does your mother do? — She ___ a doctor.", opts:["am","is","are","be"], correct:1 },
+      { q:"I want to be a ___ and help sick people.", opts:["doctor","driver","farmer","cook"], correct:0 },
+      { q:"Choose the correct sentence.", opts:["He is engineer.","He is an engineer.","He an engineer is.","He engineer is."], correct:1 },
+      { q:"My uncle works as a ___ and grows wheat.", opts:["teacher","farmer","doctor","driver"], correct:1 },
+      { q:"Choose the correct answer to \"What do you do?\"", opts:["I am fine.","I am a teacher.","I am from Tashkent.","I am 20 years old."], correct:1 }
+    ]
+  },
+  {
+    day: 14, title: "Shahar joylari va yo'nalish predloglari",
+    lesson: `
+      <h4>Shahardagi joylar</h4>
+      <p>School (maktab), hospital (kasalxona), market (bozor), bank (bank), park (bog'), restaurant (restoran).</p>
+      <h4>Yo'nalish so'rash</h4>
+      <p><em>Where is the bank?</em> — <em>It's next to the park.</em></p>
+      <h4>Yo'nalish predloglari</h4>
+      <p>Turn left / right (chapga/o'ngga buriling), go straight (to'g'ri boring), cross the street (ko'chadan o'ting).</p>
+    `,
+    vocab: [ { word:"Where is...?", hint:"...qayerda?" }, { word:"Turn left", hint:"Chapga buriling" }, { word:"Turn right", hint:"O'ngga buriling" }, { word:"Go straight", hint:"To'g'ri boring" }, { word:"Hospital", hint:"Kasalxona" } ],
+    questions: [
+      { q:"\"Kasalxona\" ingliz tilida?", opts:["School","Hospital","Bank","Market"], correct:1 },
+      { q:"\"Bozor\" ingliz tilida?", opts:["Market","Park","School","Bank"], correct:0 },
+      { q:"Where ___ the bank?", opts:["is","are","do","does"], correct:0 },
+      { q:"To go left, turn ___.", opts:["left","right","straight","back"], correct:0 },
+      { q:"Choose the correct direction word for \"to'g'ri boring\".", opts:["Turn left","Turn right","Go straight","Stop"], correct:2 },
+      { q:"Where is the school? — It's ___ the hospital.", opts:["next to","under","between","behind"], correct:0 },
+      { q:"Choose the correct question.", opts:["Where the park is?","Where is the park?","The park where is?","Is where the park?"], correct:1 },
+      { q:"To cross the street safely, you must ___.", opts:["run","look both ways","close your eyes","sleep"], correct:1 },
+      { q:"\"Restoran\" ingliz tilida?", opts:["Restaurant","Bank","Park","School"], correct:0 },
+      { q:"Turn ___ at the corner.", opts:["left","right","straight","back"], correct:1 },
+      { q:"The park is ___ the school and the bank.", opts:["next to","under","between","behind"], correct:2 },
+      { q:"Excuse me, where is the nearest ___?", opts:["bank","banks","banking","banked"], correct:0 },
+      { q:"Go straight and then turn left. This is a ___.", opts:["direction","color","number","food"], correct:0 },
+      { q:"\"Maktab\" ingliz tilida?", opts:["School","Hospital","Bank","Market"], correct:0 },
+      { q:"Choose the correct sentence.", opts:["The hospital is near of the park.","The hospital is near the park.","The hospital near is park.","Near the hospital is."], correct:1 },
+      { q:"Is there a park near here? — Yes, ___.", opts:["there is","there are","it is","they are"], correct:0 },
+      { q:"\"Bog' / park\" ingliz tilida?", opts:["Park","Market","Bank","School"], correct:0 },
+      { q:"Excuse me, how do I get to the station? — ___ straight, then turn right.", opts:["Go","Going","Went","Goes"], correct:0 },
+      { q:"Choose the correct sentence about location.", opts:["The bank is between the school and the park.","The bank between the school and the park is.","Between the bank school and park.","The bank is between school park."], correct:0 },
+      { q:"\"Chapga buriling\" ingliz tilida?", opts:["Turn right","Turn left","Go straight","Stop here"], correct:1 }
+    ]
+  },
+  {
+    day: 15, title: "Qiyoslash darajalari (Comparative & Superlative)",
+    lesson: `
+      <h4>Comparative (qiyoslash) darajasi</h4>
+      <p>Ikki narsani solishtirish uchun sifatga <strong>-er</strong> qo'shiladi (uzun so'zlarda "more" ishlatiladi): big → bigger, fast → faster, expensive → more expensive.</p>
+      <h4>Superlative (eng yuqori) daraja</h4>
+      <p>Bir nechta narsa orasida eng yuqorisini bildirish uchun <strong>-est</strong> qo'shiladi ("most" uzun so'zlarda): big → the biggest, expensive → the most expensive.</p>
+      <h4>"Than" so'zi</h4>
+      <p>Comparative bilan <strong>than</strong> ishlatiladi: <em>This car is faster than that one.</em></p>
+    `,
+    vocab: [ { word:"Bigger", hint:"Kattaroq" }, { word:"Biggest", hint:"Eng katta" }, { word:"Faster", hint:"Tezroq" }, { word:"More expensive", hint:"Qimmatroq" }, { word:"Than", hint:"...dan (qiyoslashda)" } ],
+    questions: [
+      { q:"Comparative form of \"big\":", opts:["Bigger","Biggest","More big","Big"], correct:0 },
+      { q:"Superlative form of \"big\":", opts:["Bigger","The biggest","More big","Big"], correct:1 },
+      { q:"This car is ___ than that one.", opts:["fast","faster","fastest","more fast"], correct:1 },
+      { q:"She is the ___ student in the class.", opts:["smart","smarter","smartest","more smart"], correct:2 },
+      { q:"This book is ___ than that one.", opts:["interesting","interestinger","more interesting","interestingest"], correct:2 },
+      { q:"Choose the correct sentence.", opts:["This is the most tall building.","This is the tallest building.","This is more tall building.","This is taller building."], correct:1 },
+      { q:"My house is ___ than yours.", opts:["big","bigger","biggest","more big"], correct:1 },
+      { q:"This is the ___ day of my life.", opts:["happy","happier","happiest","more happy"], correct:2 },
+      { q:"Choose the comparative of \"expensive\".", opts:["Expensiver","More expensive","Expensivest","Most expensive"], correct:1 },
+      { q:"Choose the superlative of \"expensive\".", opts:["Expensiver","More expensive","The expensivest","The most expensive"], correct:3 },
+      { q:"Elephants are ___ than cats.", opts:["big","bigger","biggest","more big"], correct:1 },
+      { q:"This is the ___ mountain in the world.", opts:["high","higher","highest","more high"], correct:2 },
+      { q:"Choose the correct sentence with \"than\".", opts:["She is taller as me.","She is taller than me.","She is more tall than me.","She is tallest than me."], correct:1 },
+      { q:"This test was ___ than the last one.", opts:["difficult","more difficult","difficultest","most difficult"], correct:1 },
+      { q:"He is the ___ boy in his family.", opts:["young","younger","youngest","more young"], correct:2 },
+      { q:"Choose the comparative of \"good\".", opts:["Gooder","Better","Bestest","More good"], correct:1 },
+      { q:"Choose the superlative of \"good\".", opts:["Gooder","Better","The best","The goodest"], correct:2 },
+      { q:"This road is ___ than that one.", opts:["long","longer","longest","more long"], correct:1 },
+      { q:"Choose the correct sentence.", opts:["This is my bigest house.","This is my biggest house.","This is my more big house.","This is my big house than."], correct:1 },
+      { q:"Which sentence is correct?", opts:["She is more young than her sister.","She is younger than her sister.","She is young than her sister.","She is youngest than her sister."], correct:1 }
+    ]
+  }
+];
+
+function getDayCourseProgress(){
+  const arr = [];
+  for (let i = 1; i <= TOTAL_DAYS_PLANNED; i++) arr.push({ day:i, status: localStorage.getItem('fie3_day_' + i) || 'none' });
+  return arr;
+}
+function isDayCourseComplete(){ return getDayCourseProgress().every(p => p.status === 'passed'); }
+
+function renderDayCourse(){
+  const progress = getDayCourseProgress();
+  const passedCount = progress.filter(p => p.status === 'passed').length;
+  let html = `
+    <div class="soon-card" style="text-align:left; border-color:var(--good); margin-bottom:18px;">
+      🎓 <strong>Kurs progressi: ${passedCount}/${TOTAL_DAYS_PLANNED} kun.</strong> Avval darsni o'qing, so'zlarni tinglab talaffuz qiling, keyin "Testni boshlash"ni bosing (kamida 60% to'g'ri javob kerak).
+    </div>
+  `;
+  html += dayCourse.map(d => {
+    const status = progress.find(p => p.day === d.day).status;
+    const prevStatus = d.day === 1 ? 'passed' : progress.find(p => p.day === d.day - 1).status;
+    const unlocked = prevStatus === 'passed';
+    const chip = status === 'passed' ? `<span class="chip" style="color:var(--good); border-color:var(--good);">✓ Tugallangan</span>`
+      : status === 'failed' ? `<span class="chip" style="color:var(--bad); border-color:var(--bad);">Qayta urinib ko'ring</span>`
+      : unlocked ? `<span class="chip">${d.questions.length} savol</span>`
+      : `<span class="chip">🔒 Qulflangan</span>`;
+    if (!unlocked){
+      return `
+        <div class="item-card" style="flex-direction:column; align-items:stretch; opacity:.55;">
+          <div style="display:flex; justify-content:space-between; align-items:center; width:100%;">
+            <span class="item-title">${d.day}-kun: ${d.title}</span>${chip}
+          </div>
+          <div class="field-hint" style="margin-top:6px;">Bu kunni ochish uchun avval ${d.day - 1}-kunni tugating.</div>
+        </div>
+      `;
+    }
+    return `
+      <div class="item-card" style="flex-direction:column; align-items:stretch;">
+        <div style="display:flex; justify-content:space-between; align-items:center; width:100%;">
+          <span class="item-title">${d.day}-kun: ${d.title}</span>${chip}
+        </div>
+        <button class="reveal-btn" style="align-self:flex-start;" onclick="toggleReveal('day${d.day}')">Darsni ochish</button>
+        <div class="reveal-body" id="day${d.day}">
+          <div id="day${d.day}-lesson">
+            ${d.lesson}
+            ${renderPronunciationBox(d.vocab)}
+            <button class="check-btn" onclick="startDayTest(${d.day})">Testni boshlash</button>
+            ${askQuestionButton(d.day)}
+          </div>
+          <div id="day${d.day}-test" style="display:none;">
+            ${renderDayMcq({ id:'day'+d.day, questions:d.questions })}
+            <button class="check-btn" onclick="checkDayTest(${d.day})">Javoblarni tekshirish</button>
+            <span class="score-badge mono" id="day${d.day}-score"></span>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+  html += `<div class="soon-card" style="margin-top:8px;"><strong>16-kundan ${TOTAL_DAYS_PLANNED}-kungacha</strong> darslar bosqichma-bosqich qo'shib boriladi.</div>`;
+  return html;
+}
+
+function renderDayMcq(test){
+  const letters = ['A','B','C','D'];
+  return test.questions.map((q, qi) => `
+    <div class="mcq-block" id="${test.id}-m${qi}">
+      <div class="mcq-q">${qi+1}. ${q.q}</div>
+      ${q.opts.map((opt,oi) => `<label class="mcq-opt"><input type="radio" name="${test.id}-m${qi}" value="${oi}"> <strong class="mono">${letters[oi]})</strong>&nbsp;${opt}</label>`).join('')}
+    </div>
+  `).join('');
+}
+function startDayTest(dayNum){
+  document.getElementById(`day${dayNum}-lesson`).style.display = 'none';
+  document.getElementById(`day${dayNum}-test`).style.display = 'block';
+}
+function checkDayTest(dayNum){
+  const day = dayCourse.find(d => d.day === dayNum);
+  const testId = 'day' + dayNum;
+  let correct = 0;
+  day.questions.forEach((q, qi) => {
+    const block = document.getElementById(`${testId}-m${qi}`);
+    const selected = block.querySelector('input[type=radio]:checked');
+    const labels = block.querySelectorAll('.mcq-opt');
+    labels.forEach((lab, oi) => {
+      lab.classList.remove('m-correct','m-wrong');
+      if (oi === q.correct) lab.classList.add('m-correct');
+      else if (selected && parseInt(selected.value) === oi) lab.classList.add('m-wrong');
+    });
+    if (selected && parseInt(selected.value) === q.correct) correct++;
+  });
+  const pct = correct / day.questions.length;
+  const passed = pct >= 0.6;
+  localStorage.setItem('fie3_day_' + dayNum, passed ? 'passed' : 'failed');
+  const badge = document.getElementById(`${testId}-score`);
+  badge.textContent = `${correct}/${day.questions.length} to'g'ri`;
+  badge.classList.add('show');
+  if (passed) updateStreak();
+}
+
+// ============ MODULE DATA ============
+const moduleData = {
+  lessons: {
+    tag: 'MODUL / 01', title: 'Darslar', desc: "1-kundan 50-kungacha, ketma-ket. Har kunda: mavzu, talaffuz mashqi va test.",
+    render: () => renderDayCourse()
+  },
+  ielts: {
+    tag: 'MODUL / 02', title: 'IELTS bosqichi', desc: "50 kunlik kursni tugatgach ochiladigan keyingi bosqich.",
+    render: () => `
+      <div class="soon-card" style="text-align:left; border-color:var(--accent); margin-bottom:16px;">
+        🎯 Bu bosqich 50 kunlik darslarni tugatganingizdan so'ng to'liq ochiladi. Bu yerda <strong>Listening</strong>, <strong>Reading</strong>, <strong>Speaking</strong> va <strong>Writing</strong> — barcha 4 ko'nikma bo'yicha real formatdagi testlar bo'ladi.
+      </div>
+      <div class="item-card"><span class="item-title">🎧 Listening</span><span class="item-meta">Audio tinglab savollarga javob berish</span></div>
+      <div class="item-card"><span class="item-title">📖 Reading</span><span class="item-meta">Matn o'qib TRUE/FALSE/NOT GIVEN va boshqa savol turlari</span></div>
+      <div class="item-card"><span class="item-title">🎙️ Speaking</span><span class="item-meta">3 qismli og'zaki test tuzilishi</span></div>
+      <div class="item-card"><span class="item-title">✍️ Writing</span><span class="item-meta">Task 1/2, javobingizni grammatik tekshirish bilan</span></div>
+    `
+  },
+  progress: {
+    tag: 'MODUL / 03', title: 'Mening progressim', desc: "Kurs davomida erishgan natijalaringiz.",
+    render: () => {
+      const progress = getDayCourseProgress();
+      const passedCount = progress.filter(p => p.status === 'passed').length;
+      const streak = parseInt(localStorage.getItem('fie3_streak') || '0');
+      const pct = Math.round((passedCount / TOTAL_DAYS_PLANNED) * 100);
+      return `
+        <div class="stat-grid">
+          <div class="stat-box"><div class="stat-num">${passedCount}/${TOTAL_DAYS_PLANNED}</div><div class="stat-label">Tugallangan kunlar</div></div>
+          <div class="stat-box"><div class="stat-num">${pct}%</div><div class="stat-label">Kurs progressi</div></div>
+          <div class="stat-box"><div class="stat-num">🔥 ${streak}</div><div class="stat-label">Kunlik seriya</div></div>
+        </div>
+        <div class="level-title" style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:var(--accent-deep); text-transform:uppercase; margin-bottom:10px;">Kunlar bo'yicha holat</div>
+        ${progress.slice(0, 10).map(p => `
+          <div class="item-card">
+            <span class="item-title">${p.day}-kun</span>
+            ${p.status === 'passed' ? '<span class="chip" style="color:var(--good); border-color:var(--good);">✓ Tugallangan</span>'
+              : p.status === 'failed' ? '<span class="chip" style="color:var(--bad); border-color:var(--bad);">Qayta urinib ko\'ring</span>'
+              : '<span class="chip">Hali boshlanmagan</span>'}
+          </div>
+        `).join('')}
+        <div class="field-hint" style="margin-top:14px;">Barcha ${TOTAL_DAYS_PLANNED} kunni tugatgach, IELTS bosqichi va sertifikat avtomatik ochiladi.</div>
+      `;
+    }
+  },
+  vocab: {
+    tag: 'MODUL / 04', title: "Lug'atim", desc: "Tugatgan darslaringizdan yig'ilgan so'zlar.",
+    render: () => {
+      const progress = getDayCourseProgress();
+      const passedDays = progress.filter(p => p.status === 'passed').map(p => p.day);
+      const words = dayCourse.filter(d => passedDays.includes(d.day)).flatMap(d => d.vocab);
+      if (words.length === 0){
+        return `<div class="soon-card">📘 Hali so'z yo'q. Birinchi kunni tugatgach, o'rgangan so'zlaringiz shu yerda to'planadi.</div>`;
+      }
+      return words.map(w => `
+        <div class="vocab-card">
+          <div><div class="vocab-word">${w.word}</div><div class="vocab-def">${w.hint}</div></div>
+          <button class="pron-play" onclick="speakWord('${w.word.replace(/'/g,"\\'")}')">▶</button>
+        </div>
+      `).join('');
+    }
+  },
+  certificate: {
+    tag: 'MODUL / 05', title: 'Sertifikat', desc: "50 kunlik kursni tugatgach oching.",
+    render: () => {
+      const complete = isDayCourseComplete();
+      const progress = getDayCourseProgress();
+      const passedCount = progress.filter(p => p.status === 'passed').length;
+      if (complete){
+        return `
+          <div class="cert-preview">
+            <div class="cert-badge">🏅</div>
+            <div class="cert-title">FUTURE IT EXPERT</div>
+            <div class="cert-sub">50 kunlik ingliz tili kursini muvaffaqiyatli tugatgani uchun</div>
+            <div class="cert-name-line">${userData.fullName || "Sizning ismingiz"}</div>
+          </div>
+          <div class="item-card" style="align-items:flex-start; flex-direction:column; gap:6px;">
+            <div class="item-title">🎉 Tabriklaymiz!</div>
+            <div class="item-meta">Rasmiy PDF sertifikatni olish uchun Telegram orqali ism-familiyangiz va shu skrinshotni yuboring.</div>
+          </div>
+          <a class="ask-btn" href="https://t.me/diiyor4" target="_blank" rel="noopener">Sertifikatni so'rash →</a>
+        `;
+      }
+      return `
+        <div class="cert-preview" style="filter:grayscale(1); opacity:.55;">
+          <div class="cert-badge">🔒</div>
+          <div class="cert-title">FUTURE IT EXPERT</div>
+          <div class="cert-sub">Sertifikat hali ochilmagan</div>
+          <div class="cert-name-line">???</div>
+        </div>
+        <div class="item-card" style="align-items:flex-start; flex-direction:column; gap:6px;">
+          <div class="item-title">Qanday olaman?</div>
+          <div class="item-meta">"Darslar" bo'limidagi 50 kunni birin-ketin tugating (har birida kamida 60%).</div>
+        </div>
+        <div class="item-card"><span class="item-title">Hozirgi progress</span><span class="chip">${passedCount} / ${TOTAL_DAYS_PLANNED}</span></div>
+      `;
+    }
+  }
+};
+
+</script>
+
+</body>
+</html>
